@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/usr/bin/cmake;-P;/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/reflect-cpp-subbuild/reflect-cpp-populate-prefix/tmp/reflect-cpp-populate-gitclone.cmake
+source_dir=/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/reflect-cpp-src
+work_dir=/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps
+repository=/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_libs/dependencies/reflect-cpp
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+

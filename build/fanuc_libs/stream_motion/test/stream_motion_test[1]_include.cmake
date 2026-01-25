@@ -1,0 +1,5 @@
+if(EXISTS "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/stream_motion/test/stream_motion_test[1]_tests.cmake")
+  include("/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/stream_motion/test/stream_motion_test[1]_tests.cmake")
+else()
+  add_test(stream_motion_test_NOT_BUILT stream_motion_test_NOT_BUILT)
+endif()

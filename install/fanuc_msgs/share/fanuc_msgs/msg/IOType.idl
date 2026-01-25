@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fanuc_msgs/msg/IOType.msg
+// generated code does not contain a copyright notice
+
+
+module fanuc_msgs {
+  module msg {
+    module IOType_Constants {
+      const string AI = "AI";
+      const string AO = "AO";
+      const string DI = "DI";
+      const string DO = "DO";
+      const string RI = "RI";
+      const string RO = "RO";
+      const string SI = "SI";
+      const string SO = "SO";
+      const string WI = "WI";
+      const string WO = "WO";
+      const string UI = "UI";
+      const string UO = "UO";
+      const string WSI = "WSI";
+      const string WSO = "WSO";
+      const string F = "F";
+      const string M = "M";
+      const string GI = "GI";
+      const string GO = "GO";
+    };
+    @verbatim (language="comment", text=
+      "SPDX-FileCopyrightText: 2025, FANUC America Corporation" "\n"
+      "SPDX-FileCopyrightText: 2025, FANUC CORPORATION" "\n"
+      "" "\n"
+      "SPDX-License-Identifier: Apache-2.0")
+    struct IOType {
+      string type;
+    };
+  };
+};

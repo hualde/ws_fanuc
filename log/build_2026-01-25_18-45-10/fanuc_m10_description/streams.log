@@ -1,0 +1,46 @@
+[0.030s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description -- -j16 -l16
+[0.059s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description -- -j16 -l16
+[0.071s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description
+[0.085s] -- Install configuration: ""
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//launch
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//launch/view_m10.launch.py
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j6.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j1.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j5.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/base.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j2.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j3.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/visual/j4.dae
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j6.stl
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j1.stl
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j2.stl
+[0.085s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/base.stl
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j3.stl
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j4.stl
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//meshes/m10_12-14d/collision/j5.stl
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//urdf
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//urdf/m10_12-14d_urdf_macro.xacro
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//robot
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//robot/m10_12-14d.urdf.xacro
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//rviz
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description//rviz/view_m10.rviz
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/ament_index/resource_index/package_run_dependencies/fanuc_m10_description
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/ament_index/resource_index/parent_prefix_path/fanuc_m10_description
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/environment/ament_prefix_path.sh
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/environment/ament_prefix_path.dsv
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/environment/path.sh
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/environment/path.dsv
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/local_setup.bash
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/local_setup.sh
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/local_setup.zsh
+[0.086s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/local_setup.dsv
+[0.087s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/package.dsv
+[0.087s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/ament_index/resource_index/packages/fanuc_m10_description
+[0.087s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/cmake/fanuc_m10_descriptionConfig.cmake
+[0.087s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/cmake/fanuc_m10_descriptionConfig-version.cmake
+[0.087s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description/share/fanuc_m10_description/package.xml
+[0.103s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_m10_description

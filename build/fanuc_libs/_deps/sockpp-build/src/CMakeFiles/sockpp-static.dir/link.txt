@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsockpp.a "CMakeFiles/sockpp-static.dir/acceptor.cpp.o" "CMakeFiles/sockpp-static.dir/connector.cpp.o" "CMakeFiles/sockpp-static.dir/datagram_socket.cpp.o" "CMakeFiles/sockpp-static.dir/error.cpp.o" "CMakeFiles/sockpp-static.dir/inet_address.cpp.o" "CMakeFiles/sockpp-static.dir/inet6_address.cpp.o" "CMakeFiles/sockpp-static.dir/socket.cpp.o" "CMakeFiles/sockpp-static.dir/stream_socket.cpp.o" "CMakeFiles/sockpp-static.dir/unix/unix_address.cpp.o"
+/usr/bin/ranlib libsockpp.a

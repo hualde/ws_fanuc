@@ -1,0 +1,116 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b285e0cd9d463fe9bc3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "fanuc_controllers",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "fanuc_controllers_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fanuc_controllers_uninstall-c43c7535db41614c032b.json",
+					"name" : "fanuc_controllers_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fanuc_gpio_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fanuc_gpio_controller-7d89b3d91bfad3eb5ccc.json",
+					"name" : "fanuc_gpio_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fanuc_gpio_controller_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-fanuc_gpio_controller_test-934cdb397f3b3d990d74.json",
+					"name" : "fanuc_gpio_controller_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scaled_joint_trajectory_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scaled_joint_trajectory_controller-15cd9b9f1f12eccef70e.json",
+					"name" : "scaled_joint_trajectory_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ffb8e8475abdb33582fe.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers",
+		"source" : "/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

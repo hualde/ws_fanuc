@@ -1,0 +1,5 @@
+if(EXISTS "/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers/test/fanuc_gpio_controller_test[1]_tests.cmake")
+  include("/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers/test/fanuc_gpio_controller_test[1]_tests.cmake")
+else()
+  add_test(fanuc_gpio_controller_test_NOT_BUILT fanuc_gpio_controller_test_NOT_BUILT)
+endif()

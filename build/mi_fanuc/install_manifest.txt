@@ -1,0 +1,17 @@
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/launch/mi_fanuc_mock_control.launch.py
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/launch/robot_description.launch.py
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/ament_index/resource_index/package_run_dependencies/mi_fanuc
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/ament_index/resource_index/parent_prefix_path/mi_fanuc
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/environment/ament_prefix_path.sh
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/environment/ament_prefix_path.dsv
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/environment/path.sh
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/environment/path.dsv
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/local_setup.bash
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/local_setup.sh
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/local_setup.zsh
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/local_setup.dsv
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/package.dsv
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/ament_index/resource_index/packages/mi_fanuc
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/cmake/mi_fanucConfig.cmake
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/cmake/mi_fanucConfig-version.cmake
+/home/hualde/misCosas/ws_fanuc/install/mi_fanuc/share/mi_fanuc/package.xml

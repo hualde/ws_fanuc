@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/yaml-cpp-build/util",
+		"source" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/yaml-cpp-src/util"
+	}
+}

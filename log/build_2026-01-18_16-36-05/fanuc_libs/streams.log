@@ -1,0 +1,178 @@
+[0.026s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_libs -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_libs
+[0.149s] -- The CXX compiler identification is GNU 11.4.0
+[0.160s] -- Detecting CXX compiler ABI info
+[0.221s] -- Detecting CXX compiler ABI info - done
+[0.227s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.229s] -- Detecting CXX compile features
+[0.230s] -- Detecting CXX compile features - done
+[0.494s] -- The C compiler identification is GNU 11.4.0
+[0.501s] -- Detecting C compiler ABI info
+[0.538s] -- Detecting C compiler ABI info - done
+[0.543s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.543s] -- Detecting C compile features
+[0.543s] -- Detecting C compile features - done
+[0.548s] -- Creating static library
+[0.548s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[0.596s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[0.596s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[0.639s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[0.639s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[0.684s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[13.370s] [33mCMake Warning (dev) at /usr/share/cmake-3.25/Modules/FetchContent.cmake:1279 (message):
+[13.370s]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[13.370s]   not set.  The policy's OLD behavior will be used.  When using a URL
+[13.370s]   download, the timestamps of extracted files should preferably be that of
+[13.370s]   the time of extraction, otherwise code that depends on the extracted
+[13.370s]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[13.370s]   preserves the timestamps from the archive instead, but this is usually not
+[13.370s]   what you want.  Update your project to the NEW behavior or specify the
+[13.370s]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[13.370s]   robustness issue.
+[13.370s] Call Stack (most recent call first):
+[13.370s]   CMakeLists.txt:57 (FetchContent_Declare)
+[13.370s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[13.370s] [0m
+[14.511s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[14.511s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[14.553s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[14.553s] -- Found Threads: TRUE  
+[14.574s] -- Configuring done
+[14.606s] -- Generating done
+[14.616s] -- Build files have been written to: /home/hualde/misCosas/ws_fanuc/build/fanuc_libs
+[14.621s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_libs -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_libs
+[14.622s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_libs -- -j16 -l16
+[14.644s] [  1%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/error.cpp.o[0m
+[14.644s] [  2%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[14.644s] [  5%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/datagram_socket.cpp.o[0m
+[14.644s] [  8%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/inet6_address.cpp.o[0m
+[14.645s] [  5%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/connector.cpp.o[0m
+[14.645s] [  5%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/acceptor.cpp.o[0m
+[14.645s] [  6%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/inet_address.cpp.o[0m
+[14.645s] [  9%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/socket.cpp.o[0m
+[14.645s] [ 11%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o[0m
+[14.645s] [ 11%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o[0m
+[14.645s] [ 12%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/unix/unix_address.cpp.o[0m
+[14.645s] [ 13%] [32mBuilding CXX object _deps/sockpp-build/src/CMakeFiles/sockpp-static.dir/stream_socket.cpp.o[0m
+[14.645s] [ 15%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o[0m
+[14.645s] [ 16%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o[0m
+[14.646s] [ 17%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o[0m
+[14.646s] [ 18%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o[0m
+[14.836s] [ 19%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o[0m
+[14.862s] [ 20%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o[0m
+[14.873s] [ 22%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o[0m
+[14.889s] [ 23%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o[0m
+[14.957s] [ 24%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o[0m
+[14.979s] [ 25%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o[0m
+[14.987s] [ 26%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o[0m
+[14.998s] [ 27%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/fptostring.cpp.o[0m
+[15.067s] [ 29%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o[0m
+[15.072s] [ 30%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o[0m
+[15.086s] [ 31%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o[0m
+[15.099s] [ 32%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o[0m
+[15.145s] [ 33%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o[0m
+[15.166s] [ 34%] [32m[1mLinking CXX static library libsockpp.a[0m
+[15.193s] [ 36%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o[0m
+[15.248s] [ 37%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o[0m
+[15.340s] [ 38%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o[0m
+[15.342s] [ 39%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o[0m
+[15.342s] [ 40%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o[0m
+[15.354s] [ 41%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o[0m
+[15.358s] [ 43%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o[0m
+[15.431s] [ 44%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o[0m
+[15.438s] [ 45%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o[0m
+[15.457s] [ 45%] Built target sockpp-static
+[15.468s] [ 46%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o[0m
+[15.513s] [ 47%] [32mBuilding CXX object stream_motion/CMakeFiles/stream_motion.dir/src/stream.cpp.o[0m
+[15.564s] [ 48%] [32mBuilding CXX object stream_motion/CMakeFiles/stream_motion.dir/src/byte_ops.cpp.o[0m
+[15.564s] [ 50%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o[0m
+[15.635s] [ 51%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o[0m
+[15.635s] [ 52%] [32mBuilding CXX object _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o[0m
+[15.996s] [ 53%] [32m[1mLinking CXX static library libyaml-cpp.a[0m
+[16.069s] [ 53%] Built target yaml-cpp
+[16.076s] [ 54%] [32mBuilding CXX object _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/sandbox.cpp.o[0m
+[16.076s] [ 55%] [32mBuilding CXX object _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/read.cpp.o[0m
+[16.076s] [ 56%] [32mBuilding CXX object _deps/reflect-cpp-build/CMakeFiles/reflectcpp.dir/cmake_pch.hxx.gch[0m
+[16.077s] [ 58%] [32mBuilding CXX object _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o[0m
+[16.178s] [ 59%] [32m[1mLinking CXX shared library libstream_motion.so[0m
+[16.231s] [ 59%] Built target stream_motion
+[16.528s] [ 60%] [32m[1mLinking CXX executable parse[0m
+[16.553s] [ 61%] [32m[1mLinking CXX executable read[0m
+[16.556s] [ 62%] [32m[1mLinking CXX executable sandbox[0m
+[16.616s] [ 62%] Built target yaml-cpp-sandbox
+[16.623s] [ 62%] Built target yaml-cpp-parse
+[16.624s] [ 62%] Built target yaml-cpp-read
+[17.260s] [ 63%] [32m[1mLinking CXX static library ../../../lib/libgtest.a[0m
+[17.315s] [ 63%] Built target gtest
+[17.322s] [ 65%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[17.322s] [ 66%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[17.821s] [ 67%] [32m[1mLinking CXX static library ../../../lib/libgtest_main.a[0m
+[17.857s] [ 67%] Built target gtest_main
+[17.864s] [ 68%] [32mBuilding CXX object stream_motion/test/CMakeFiles/stream_motion_test.dir/stream_test.cpp.o[0m
+[18.396s] [ 69%] [32m[1mLinking CXX static library ../../../lib/libgmock.a[0m
+[18.438s] [ 69%] Built target gmock
+[18.446s] [ 70%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[18.689s] [ 72%] [32m[1mLinking CXX executable stream_motion_test[0m
+[18.787s] [ 72%] Built target stream_motion_test
+[19.085s] [ 73%] [32m[1mLinking CXX static library ../../../lib/libgmock_main.a[0m
+[19.124s] [ 73%] Built target gmock_main
+[19.173s] [ 75%] [32mBuilding CXX object _deps/reflect-cpp-build/CMakeFiles/reflectcpp.dir/src/reflectcpp_json.cpp.o[0m
+[19.173s] [ 75%] [32mBuilding CXX object _deps/reflect-cpp-build/CMakeFiles/reflectcpp.dir/src/reflectcpp.cpp.o[0m
+[19.173s] [ 77%] [32mBuilding CXX object _deps/reflect-cpp-build/CMakeFiles/reflectcpp.dir/src/yyjson.c.o[0m
+[19.173s] [ 77%] [32mBuilding CXX object _deps/reflect-cpp-build/CMakeFiles/reflectcpp.dir/src/reflectcpp_yaml.cpp.o[0m
+[25.128s] [ 79%] [32m[1mLinking CXX static library libreflectcpp.a[0m
+[25.278s] [ 79%] Built target reflectcpp
+[25.284s] [ 80%] [32mBuilding CXX object rmi/CMakeFiles/rmi.dir/src/rmi.cpp.o[0m
+[25.284s] [ 81%] [32mBuilding CXX object gpio_config/CMakeFiles/gpio_config.dir/src/gpio_config.cpp.o[0m
+[25.284s] [ 82%] [32mBuilding CXX object rmi/CMakeFiles/rmi.dir/src/serialization.cpp.o[0m
+[25.284s] [ 83%] [32mBuilding CXX object rmi/CMakeFiles/rmi.dir/src/deserialization.cpp.o[0m
+[27.917s] [ 84%] [32m[1mLinking CXX shared library libgpio_config.so[0m
+[28.071s] [ 84%] Built target gpio_config
+[28.078s] [ 86%] [32mBuilding CXX object gpio_config/test/CMakeFiles/gpio_config_test.dir/gpio_config_test.cpp.o[0m
+[30.286s] [ 87%] [32m[1mLinking CXX executable gpio_config_test[0m
+[30.428s] [ 87%] Built target gpio_config_test
+[33.057s] [ 88%] [32m[1mLinking CXX shared library librmi.so[0m
+[33.631s] [ 88%] Built target rmi
+[33.637s] [ 89%] [32mBuilding CXX object fanuc_client/CMakeFiles/fanuc_client.dir/src/fanuc_client.cpp.o[0m
+[33.637s] [ 90%] [32mBuilding CXX object rmi/test/CMakeFiles/rmi_test.dir/rmi_test.cpp.o[0m
+[33.637s] [ 91%] [32mBuilding CXX object fanuc_client/CMakeFiles/fanuc_client.dir/src/gpio_buffer.cpp.o[0m
+[33.637s] [ 93%] [32mBuilding CXX object fanuc_client/CMakeFiles/fanuc_client.dir/src/rmi_singleton.cpp.o[0m
+[34.382s] [ 94%] [32m[1mLinking CXX executable rmi_test[0m
+[34.526s] [ 94%] Built target rmi_test
+[34.692s] [ 95%] [32m[1mLinking CXX shared library libfanuc_client.so[0m
+[34.805s] [ 95%] Built target fanuc_client
+[34.812s] [ 97%] [32mBuilding CXX object fanuc_client/test/CMakeFiles/gpio_buffer_test.dir/gpio_buffer_test.cpp.o[0m
+[34.812s] [ 97%] [32mBuilding CXX object fanuc_client/test/CMakeFiles/fanuc_client_test.dir/fanuc_client_test.cpp.o[0m
+[36.152s] [ 98%] [32m[1mLinking CXX executable gpio_buffer_test[0m
+[36.335s] [ 98%] Built target gpio_buffer_test
+[38.800s] [100%] [32m[1mLinking CXX executable fanuc_client_test[0m
+[39.027s] [100%] Built target fanuc_client_test
+[39.034s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_libs -- -j16 -l16
+[39.035s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_libs
+[39.037s] -- Install configuration: ""
+[39.038s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libstream_motion.so
+[39.038s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/librmi.so
+[39.057s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libfanuc_client.so
+[39.058s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libfanuc_client.so" to ""
+[39.058s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libgpio_config.so
+[39.061s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets.cmake
+[39.061s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets-noconfig.cmake
+[39.061s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+[39.061s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi
+[39.061s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/rmi.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/serialization.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/packets.hpp
+[39.062s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/stream.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/byte_ops.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/packets.hpp
+[39.062s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/fanuc_client.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/gpio_buffer.hpp
+[39.062s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/gpio_config
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/gpio_config/gpio_config.hpp
+[39.062s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfig.cmake
+[39.063s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfigVersion.cmake
+[39.065s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_libs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_libs

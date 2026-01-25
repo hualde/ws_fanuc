@@ -1,0 +1,17 @@
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libstream_motion.so
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/librmi.so
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libfanuc_client.so
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libgpio_config.so
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets.cmake
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets-noconfig.cmake
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/rmi.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/serialization.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/packets.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/stream.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/byte_ops.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/packets.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/fanuc_client.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/gpio_buffer.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/gpio_config/gpio_config.hpp
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfig.cmake
+/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfigVersion.cmake

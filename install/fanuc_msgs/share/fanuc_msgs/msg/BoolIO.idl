@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fanuc_msgs/msg/BoolIO.msg
+// generated code does not contain a copyright notice
+
+#include "fanuc_msgs/msg/IOType.idl"
+
+module fanuc_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "SPDX-FileCopyrightText: 2025, FANUC America Corporation" "\n"
+      "SPDX-FileCopyrightText: 2025, FANUC CORPORATION" "\n"
+      "" "\n"
+      "SPDX-License-Identifier: Apache-2.0")
+    struct BoolIO {
+      @verbatim (language="comment", text=
+        "Supported types:" "\n"
+        " DI" "\n"
+        " DO" "\n"
+        " RI" "\n"
+        " RO" "\n"
+        " F")
+      fanuc_msgs::msg::IOType io_type;
+
+      uint16 index;
+
+      boolean value;
+    };
+  };
+};

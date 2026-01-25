@@ -1,0 +1,5 @@
+if(EXISTS "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test/rmi_test[1]_tests.cmake")
+  include("/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test/rmi_test[1]_tests.cmake")
+else()
+  add_test(rmi_test_NOT_BUILT rmi_test_NOT_BUILT)
+endif()

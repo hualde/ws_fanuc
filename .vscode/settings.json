@@ -1,0 +1,12 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages",
+        "/home/hualde/misCosas/ros2_ws/install/ur_pick_place/lib/python3.10/site-packages",
+        "/home/hualde/misCosas/ros2_ws/install/ur5_pick_place/lib/python3.10/site-packages",
+        "/home/hualde/misCosas/ros2_ws/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs/fanuc_msgs__py"
+}

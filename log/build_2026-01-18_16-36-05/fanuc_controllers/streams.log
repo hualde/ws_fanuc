@@ -1,0 +1,94 @@
+[0.010s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.075s] -- The CXX compiler identification is GNU 11.4.0
+[0.080s] -- Detecting C compiler ABI info
+[0.115s] -- Detecting C compiler ABI info - done
+[0.119s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.119s] -- Detecting C compile features
+[0.120s] -- Detecting C compile features - done
+[0.123s] -- Detecting CXX compiler ABI info
+[0.163s] -- Detecting CXX compiler ABI info - done
+[0.167s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.168s] -- Detecting CXX compile features
+[0.168s] -- Detecting CXX compile features - done
+[0.170s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.246s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.309s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.310s] -- Imported targets: Python3::Interpreter
+[0.311s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.318s] -- Found controller_interface: 2.52.2 (/opt/ros/humble/share/controller_interface/cmake)
+[0.356s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.362s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.368s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.377s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.389s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.536s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.556s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.586s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.588s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.599s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.601s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.607s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.612s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.620s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.659s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.659s] -- Found Threads: TRUE  
+[0.692s] -- Found controller_manager_msgs: 2.52.2 (/opt/ros/humble/share/controller_manager_msgs/cmake)
+[0.700s] -- Found fanuc_hardware_interface: 1.1.1 (/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface/share/fanuc_hardware_interface/cmake)
+[0.707s] -- Found fanuc_msgs: 1.1.1 (/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake)
+[0.714s] -- Found joint_trajectory_controller: 2.50.2 (/opt/ros/humble/share/joint_trajectory_controller/cmake)
+[0.781s] -- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.11.0")  
+[0.823s] -- Configuring done
+[0.842s] -- Generating done
+[0.850s] -- Build files have been written to: /home/hualde/misCosas/ws_fanuc/build/fanuc_controllers
+[0.859s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers' returned '0': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers
+[0.860s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_controllers -- -j16 -l16
+[0.878s] [ 16%] [32mBuilding CXX object CMakeFiles/scaled_joint_trajectory_controller.dir/src/scaled_joint_trajectory_controller.cpp.o[0m
+[0.879s] [ 33%] [32mBuilding CXX object CMakeFiles/fanuc_gpio_controller.dir/src/fanuc_gpio_controller.cpp.o[0m
+[3.509s] [01m[K/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers/src/fanuc_gpio_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn fanuc_controllers::FanucGPIOController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[3.509s] [01m[K/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers/src/fanuc_gpio_controller.cpp:878:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.509s]   878 | controller_interface::CallbackReturn FanucGPIOController::on_activate([01;35m[Kconst rclcpp_lifecycle::State& state[m[K)
+[3.510s]       |                                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.512s] [01m[K/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers/src/fanuc_gpio_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type fanuc_controllers::FanucGPIOController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.512s] [01m[K/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers/src/fanuc_gpio_controller.cpp:883:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.512s]   883 | controller_interface::return_type FanucGPIOController::update([01;35m[Kconst rclcpp::Time& time[m[K, const rclcpp::Duration& period)
+[3.512s]       |                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.512s] [01m[K/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_controllers/src/fanuc_gpio_controller.cpp:883:113:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.512s]   883 | controller_interface::return_type FanucGPIOController::update(const rclcpp::Time& time, [01;35m[Kconst rclcpp::Duration& period[m[K)
+[3.512s]       |                                                                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[6.467s] [ 50%] [32m[1mLinking CXX shared library libscaled_joint_trajectory_controller.so[0m
+[6.748s] [ 50%] Built target scaled_joint_trajectory_controller
+[15.806s] [ 66%] [32m[1mLinking CXX shared library libfanuc_gpio_controller.so[0m
+[16.821s] [ 66%] Built target fanuc_gpio_controller
+[16.828s] [ 83%] [32mBuilding CXX object test/CMakeFiles/fanuc_gpio_controller_test.dir/fanuc_gpio_controller_test.cpp.o[0m
+[22.024s] [100%] [32m[1mLinking CXX executable fanuc_gpio_controller_test[0m
+[22.613s] [100%] Built target fanuc_gpio_controller_test
+[22.617s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers' returned '0': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_controllers -- -j16 -l16
+[22.621s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_controllers
+[22.621s] -- Install configuration: ""
+[22.621s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libscaled_joint_trajectory_controller.so
+[22.625s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libscaled_joint_trajectory_controller.so" to ""
+[22.625s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libfanuc_gpio_controller.so
+[22.642s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libfanuc_gpio_controller.so" to ""
+[22.642s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/scaled_joint_trajectory_controller_plugins.xml
+[22.642s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/fanuc_gpio_controller_plugins.xml
+[22.642s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/scaled_joint_trajectory_controller_plugins.xml
+[22.642s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/fanuc_gpio_controller_plugins.xml
+[22.642s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/package_run_dependencies/fanuc_controllers
+[22.642s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/parent_prefix_path/fanuc_controllers
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/ament_prefix_path.sh
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/ament_prefix_path.dsv
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/path.sh
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/path.dsv
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.bash
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.sh
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.zsh
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.dsv
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/package.dsv
+[22.643s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/packages/fanuc_controllers
+[22.644s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/fanuc_controllers
+[22.644s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/cmake/fanuc_controllersConfig.cmake
+[22.644s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/cmake/fanuc_controllersConfig-version.cmake
+[22.644s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/package.xml
+[22.645s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_controllers' returned '0': CMAKE_PREFIX_PATH=/home/hualde/misCosas/ws_fanuc/install/fanuc_hardware_interface:/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs:/home/hualde/misCosas/ws_fanuc/install/fanuc_libs:/home/hualde/misCosas/ws_fanuc/install/slider_publisher:/home/hualde/misCosas/ws_fanuc/install/mi_fanuc:/home/hualde/misCosas/ws_fanuc/install/fanuc_r2000_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_r1000ia_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_controllers:/home/hualde/misCosas/ws_fanuc/install/fanuc_moveit_config:/home/hualde/misCosas/ws_fanuc/install/fanuc_m20_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_m10_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_lrmate_description:/home/hualde/misCosas/ws_fanuc/install/fanuc_forward_command:/home/hualde/misCosas/ws_fanuc/install/fanuc_crx_description:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_controllers

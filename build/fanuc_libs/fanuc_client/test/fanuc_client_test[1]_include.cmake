@@ -1,0 +1,5 @@
+if(EXISTS "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/fanuc_client_test[1]_tests.cmake")
+  include("/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/fanuc_client_test[1]_tests.cmake")
+else()
+  add_test(fanuc_client_test_NOT_BUILT fanuc_client_test_NOT_BUILT)
+endif()

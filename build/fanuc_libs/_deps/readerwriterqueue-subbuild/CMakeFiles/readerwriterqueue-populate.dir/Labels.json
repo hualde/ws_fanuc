@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/CMakeFiles/readerwriterqueue-populate"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/CMakeFiles/readerwriterqueue-populate.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/CMakeFiles/readerwriterqueue-populate-complete.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-build.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-configure.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-download.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-install.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-patch.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-test.rule"
+		},
+		{
+			"file" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/_deps/readerwriterqueue-subbuild/readerwriterqueue-populate-prefix/src/readerwriterqueue-populate-stamp/readerwriterqueue-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"readerwriterqueue-populate"
+		],
+		"name" : "readerwriterqueue-populate"
+	}
+}

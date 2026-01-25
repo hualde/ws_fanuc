@@ -1,0 +1,45 @@
+[  2%] Built target gtest
+[ 13%] Built target sockpp-static
+[ 52%] Built target yaml-cpp
+[ 54%] Built target gtest_main
+[ 56%] Built target gmock
+[ 60%] Built target stream_motion
+[ 62%] Built target yaml-cpp-sandbox
+[ 65%] Built target yaml-cpp-read
+[ 67%] Built target yaml-cpp-parse
+[ 74%] Built target reflectcpp
+[ 76%] Built target gmock_main
+[ 79%] Built target stream_motion_test
+[ 81%] Built target gpio_config
+[ 86%] Built target rmi
+[ 88%] Built target gpio_config_test
+[ 90%] Built target rmi_test
+[ 95%] Built target fanuc_client
+[ 97%] Built target gpio_buffer_test
+[100%] Built target fanuc_client_test
+-- Install configuration: ""
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libstream_motion.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/librmi.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libfanuc_client.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/libgpio_config.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets.cmake
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsTargets-noconfig.cmake
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/rmi.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/serialization.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/rmi/packets.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/stream.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/byte_ops.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/stream_motion/packets.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/fanuc_client.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/fanuc_client/gpio_buffer.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/gpio_config
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include/gpio_config/gpio_config.hpp
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfig.cmake
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib/cmake/fanuc_libs/fanuc_libsConfigVersion.cmake

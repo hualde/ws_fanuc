@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/slider_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/slider_publisher -- -j16 -l16
+[0.082s] [100%] Built target slider_gui_node
+[0.112s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/slider_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/slider_publisher -- -j16 -l16
+[0.112s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/slider_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/slider_publisher
+[0.124s] -- Install configuration: ""
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/lib/slider_publisher/slider_gui_node
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/launch
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/launch/slider_gui_launch.py
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/ament_index/resource_index/package_run_dependencies/slider_publisher
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/ament_index/resource_index/parent_prefix_path/slider_publisher
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/environment/ament_prefix_path.sh
+[0.124s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/environment/ament_prefix_path.dsv
+[0.125s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/environment/path.sh
+[0.125s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/environment/path.dsv
+[0.126s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/local_setup.bash
+[0.126s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/local_setup.sh
+[0.126s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/local_setup.zsh
+[0.126s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/local_setup.dsv
+[0.126s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/package.dsv
+[0.127s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/ament_index/resource_index/packages/slider_publisher
+[0.127s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/cmake/slider_publisherConfig.cmake
+[0.127s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/cmake/slider_publisherConfig-version.cmake
+[0.127s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/slider_publisher/share/slider_publisher/package.xml
+[0.128s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/slider_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/slider_publisher

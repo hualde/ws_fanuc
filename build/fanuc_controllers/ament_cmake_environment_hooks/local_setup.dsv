@@ -1,0 +1,2 @@
+source;share/fanuc_controllers/environment/ament_prefix_path.sh
+source;share/fanuc_controllers/environment/path.sh

@@ -1,0 +1,37 @@
+// generated from rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
+// with input from fanuc_msgs:msg/AnalogIO.idl
+// generated code does not contain a copyright notice
+#ifndef FANUC_MSGS__MSG__DETAIL__ANALOG_IO__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+#define FANUC_MSGS__MSG__DETAIL__ANALOG_IO__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+
+
+#include <stddef.h>
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "fanuc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_fanuc_msgs
+size_t get_serialized_size_fanuc_msgs__msg__AnalogIO(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_fanuc_msgs
+size_t max_serialized_size_fanuc_msgs__msg__AnalogIO(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_fanuc_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, fanuc_msgs, msg, AnalogIO)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // FANUC_MSGS__MSG__DETAIL__ANALOG_IO__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_

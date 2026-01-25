@@ -1,0 +1,11 @@
+source;share/fanuc_libs/hook/cmake_prefix_path.ps1
+source;share/fanuc_libs/hook/cmake_prefix_path.dsv
+source;share/fanuc_libs/hook/cmake_prefix_path.sh
+source;share/fanuc_libs/hook/ld_library_path_lib.ps1
+source;share/fanuc_libs/hook/ld_library_path_lib.dsv
+source;share/fanuc_libs/hook/ld_library_path_lib.sh
+source;share/fanuc_libs/local_setup.bash
+source;share/fanuc_libs/local_setup.dsv
+source;share/fanuc_libs/local_setup.ps1
+source;share/fanuc_libs/local_setup.sh
+source;share/fanuc_libs/local_setup.zsh

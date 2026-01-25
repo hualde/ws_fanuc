@@ -1,0 +1,5 @@
+add_test([=[ParseGPIOConfigTest.ParsesSuccessfully]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/gpio_config/test/gpio_config_test [==[--gtest_filter=ParseGPIOConfigTest.ParsesSuccessfully]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ParseGPIOConfigTest.ParsesSuccessfully]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/gpio_config/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ParseGPIOConfigTest.ParsingFails]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/gpio_config/test/gpio_config_test [==[--gtest_filter=ParseGPIOConfigTest.ParsingFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ParseGPIOConfigTest.ParsingFails]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/gpio_config/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  gpio_config_test_TESTS ParseGPIOConfigTest.ParsesSuccessfully ParseGPIOConfigTest.ParsingFails)

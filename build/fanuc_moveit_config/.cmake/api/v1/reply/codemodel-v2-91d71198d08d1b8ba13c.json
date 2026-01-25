@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ab214286706c7150c212.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "fanuc_moveit_config",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "fanuc_controllers_moveit_trajectory_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fanuc_controllers_moveit_trajectory_plugin-9ccec835ac1c58334c0d.json",
+					"name" : "fanuc_controllers_moveit_trajectory_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fanuc_moveit_config_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fanuc_moveit_config_uninstall-36ec1d19647a59cd502f.json",
+					"name" : "fanuc_moveit_config_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-52d42db48ea1bdf8400f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hualde/misCosas/ws_fanuc/build/fanuc_moveit_config",
+		"source" : "/home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_moveit_config"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

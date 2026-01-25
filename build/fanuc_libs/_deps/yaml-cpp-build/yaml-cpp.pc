@@ -1,0 +1,11 @@
+prefix=/home/hualde/misCosas/ws_fanuc/install/fanuc_libs
+exec_prefix=${prefix}
+includedir=/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/include
+libdir=/home/hualde/misCosas/ws_fanuc/install/fanuc_libs/lib
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.8.0
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

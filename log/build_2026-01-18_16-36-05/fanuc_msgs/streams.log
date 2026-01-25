@@ -1,0 +1,1052 @@
+[0.017s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_msgs -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs
+[0.128s] -- The C compiler identification is GNU 11.4.0
+[0.166s] -- The CXX compiler identification is GNU 11.4.0
+[0.173s] -- Detecting C compiler ABI info
+[0.213s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.218s] -- Detecting C compile features
+[0.218s] -- Detecting C compile features - done
+[0.221s] -- Detecting CXX compiler ABI info
+[0.268s] -- Detecting CXX compiler ABI info - done
+[0.273s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.274s] -- Detecting CXX compile features
+[0.274s] -- Detecting CXX compile features - done
+[0.280s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.369s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.443s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.448s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.457s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.509s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.775s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.921s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.936s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.938s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.957s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.957s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.957s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.957s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.971s] -- Found PythonExtra: .so  
+[1.002s] -- Configuring done
+[1.047s] -- Generating done
+[1.056s] -- Build files have been written to: /home/hualde/misCosas/ws_fanuc/build/fanuc_msgs
+[1.064s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hualde/misCosas/ws_fanuc/src/fanuc_driver/fanuc_msgs -DCMAKE_INSTALL_PREFIX=/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs
+[1.065s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_msgs -- -j16 -l16
+[1.085s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.090s] [  1%] Built target ament_cmake_python_copy_fanuc_msgs
+[1.090s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.259s] running egg_info
+[1.259s] creating fanuc_msgs.egg-info
+[1.259s] writing fanuc_msgs.egg-info/PKG-INFO
+[1.259s] writing dependency_links to fanuc_msgs.egg-info/dependency_links.txt
+[1.259s] writing top-level names to fanuc_msgs.egg-info/top_level.txt
+[1.261s] writing manifest file 'fanuc_msgs.egg-info/SOURCES.txt'
+[1.263s] reading manifest file 'fanuc_msgs.egg-info/SOURCES.txt'
+[1.263s] writing manifest file 'fanuc_msgs.egg-info/SOURCES.txt'
+[1.277s] [  1%] Built target ament_cmake_python_build_fanuc_msgs_egg
+[2.508s] [  1%] Built target fanuc_msgs__cpp
+[2.514s] [  1%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/io_type__functions.c.o[0m
+[2.514s] [  2%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/analog_io__functions.c.o[0m
+[2.514s] [  2%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/analog_io_cmd__functions.c.o[0m
+[2.514s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.514s] [  3%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/analog_io_state__functions.c.o[0m
+[2.514s] [  4%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/bool_io__functions.c.o[0m
+[2.514s] [  4%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/io_cmd__functions.c.o[0m
+[2.514s] [  5%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/io_state__functions.c.o[0m
+[2.514s] [  5%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/num_reg__functions.c.o[0m
+[2.514s] [  5%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/num_reg_cmd__functions.c.o[0m
+[2.515s] [  6%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/num_reg_state__functions.c.o[0m
+[2.515s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.515s] [  7%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/connection_status__functions.c.o[0m
+[2.515s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.516s] [  9%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/robot_status__functions.c.o[0m
+[2.529s] [  9%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/robot_status_ext__functions.c.o[0m
+[2.556s] [  9%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/msg/detail/collaborative_speed_scaling__functions.c.o[0m
+[2.558s] [  9%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/get_analog_io__functions.c.o[0m
+[2.560s] [ 10%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_analog_io__functions.c.o[0m
+[2.564s] [ 11%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_bool_io__functions.c.o[0m
+[2.564s] [ 11%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/get_bool_io__functions.c.o[0m
+[2.564s] [ 11%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_group_io__functions.c.o[0m
+[2.567s] [ 12%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/get_group_io__functions.c.o[0m
+[2.573s] [ 12%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_num_reg__functions.c.o[0m
+[2.573s] [ 12%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/get_pos_reg__functions.c.o[0m
+[2.573s] [ 12%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_pos_reg__functions.c.o[0m
+[2.580s] [ 13%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/get_num_reg__functions.c.o[0m
+[2.581s] [ 14%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_gen_override__functions.c.o[0m
+[2.590s] [ 14%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_payload_id__functions.c.o[0m
+[2.597s] [ 15%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_payload_value__functions.c.o[0m
+[2.604s] [ 15%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_c.dir/rosidl_generator_c/fanuc_msgs/srv/detail/set_payload_comp__functions.c.o[0m
+[2.650s] [ 15%] [32m[1mLinking C shared library libfanuc_msgs__rosidl_generator_c.so[0m
+[2.673s] [ 15%] Built target fanuc_msgs__rosidl_generator_c
+[2.677s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.677s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.678s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.597s] [ 18%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/io_type__type_support.cpp.o[0m
+[3.597s] [ 18%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/analog_io__type_support.cpp.o[0m
+[3.597s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/analog_io_cmd__type_support.cpp.o[0m
+[3.597s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/analog_io_state__type_support.cpp.o[0m
+[3.597s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/bool_io__type_support.cpp.o[0m
+[3.598s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/io_cmd__type_support.cpp.o[0m
+[3.598s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/io_state__type_support.cpp.o[0m
+[3.606s] [ 20%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/num_reg_cmd__type_support.cpp.o[0m
+[3.606s] [ 21%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/num_reg_state__type_support.cpp.o[0m
+[3.612s] [ 22%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/num_reg__type_support.cpp.o[0m
+[3.613s] [ 22%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/connection_status__type_support.cpp.o[0m
+[3.827s] [ 22%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/robot_status__type_support.cpp.o[0m
+[3.837s] [ 23%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/robot_status_ext__type_support.cpp.o[0m
+[3.857s] [ 23%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/msg/collaborative_speed_scaling__type_support.cpp.o[0m
+[3.857s] [ 24%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_analog_io__type_support.cpp.o[0m
+[3.868s] [ 24%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/analog_io__type_support.cpp.o[0m
+[3.869s] [ 24%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/io_type__type_support.cpp.o[0m
+[3.870s] [ 25%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/analog_io_cmd__type_support.cpp.o[0m
+[3.878s] [ 25%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/get_analog_io__type_support.cpp.o[0m
+[3.879s] [ 25%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_bool_io__type_support.cpp.o[0m
+[3.892s] [ 25%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/analog_io_state__type_support.cpp.o[0m
+[3.898s] [ 26%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/get_bool_io__type_support.cpp.o[0m
+[3.899s] [ 27%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/bool_io__type_support.cpp.o[0m
+[3.904s] [ 27%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/io_cmd__type_support.cpp.o[0m
+[3.905s] [ 27%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_group_io__type_support.cpp.o[0m
+[3.927s] [ 28%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/get_group_io__type_support.cpp.o[0m
+[3.940s] [ 28%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/io_state__type_support.cpp.o[0m
+[3.940s] [ 29%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/num_reg__type_support.cpp.o[0m
+[3.940s] [ 29%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/num_reg_cmd__type_support.cpp.o[0m
+[3.975s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/num_reg_state__type_support.cpp.o[0m
+[3.975s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_num_reg__type_support.cpp.o[0m
+[3.993s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/get_num_reg__type_support.cpp.o[0m
+[4.005s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/io_type__type_support.cpp.o[0m
+[4.024s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/connection_status__type_support.cpp.o[0m
+[4.081s] [ 30%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/robot_status__type_support.cpp.o[0m
+[4.085s] [ 31%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/analog_io__type_support.cpp.o[0m
+[4.092s] [ 31%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/analog_io_cmd__type_support.cpp.o[0m
+[4.114s] [ 32%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_pos_reg__type_support.cpp.o[0m
+[4.121s] [ 33%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/robot_status_ext__type_support.cpp.o[0m
+[4.134s] [ 33%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/analog_io_state__type_support.cpp.o[0m
+[4.139s] [ 33%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/msg/collaborative_speed_scaling__type_support.cpp.o[0m
+[4.144s] [ 34%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/bool_io__type_support.cpp.o[0m
+[4.163s] [ 34%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/io_cmd__type_support.cpp.o[0m
+[4.163s] [ 35%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/io_state__type_support.cpp.o[0m
+[4.177s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_analog_io__type_support.cpp.o[0m
+[4.184s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/get_analog_io__type_support.cpp.o[0m
+[4.194s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/num_reg__type_support.cpp.o[0m
+[4.218s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/io_type__type_support.cpp.o[0m
+[4.223s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_bool_io__type_support.cpp.o[0m
+[4.238s] [ 36%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/analog_io__type_support.cpp.o[0m
+[4.246s] [ 37%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/analog_io_cmd__type_support.cpp.o[0m
+[4.248s] [ 37%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/get_pos_reg__type_support.cpp.o[0m
+[4.263s] [ 38%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/get_bool_io__type_support.cpp.o[0m
+[4.302s] [ 38%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_group_io__type_support.cpp.o[0m
+[4.327s] [ 38%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/io_type__type_support.c.o[0m
+[4.353s] [ 39%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/get_group_io__type_support.cpp.o[0m
+[4.353s] [ 39%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/analog_io_state__type_support.cpp.o[0m
+[4.371s] [ 40%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/analog_io__type_support.c.o[0m
+[4.388s] [ 40%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_num_reg__type_support.cpp.o[0m
+[4.427s] [ 40%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/analog_io_cmd__type_support.c.o[0m
+[4.437s] [ 41%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/get_num_reg__type_support.cpp.o[0m
+[4.440s] [ 42%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/bool_io__type_support.cpp.o[0m
+[4.475s] [ 42%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_pos_reg__type_support.cpp.o[0m
+[4.480s] [ 42%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/analog_io_state__type_support.c.o[0m
+[4.490s] [ 42%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/get_pos_reg__type_support.cpp.o[0m
+[4.507s] [ 43%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_gen_override__type_support.cpp.o[0m
+[4.521s] [ 43%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/io_cmd__type_support.cpp.o[0m
+[4.525s] [ 44%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/bool_io__type_support.c.o[0m
+[4.529s] [ 45%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_gen_override__type_support.cpp.o[0m
+[4.532s] [ 45%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_payload_id__type_support.cpp.o[0m
+[4.545s] [ 45%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_payload_id__type_support.cpp.o[0m
+[4.551s] [ 45%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/io_type__type_support_c.cpp.o[0m
+[4.551s] [ 45%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_payload_value__type_support.cpp.o[0m
+[4.559s] [ 46%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fanuc_msgs/srv/set_payload_comp__type_support.cpp.o[0m
+[4.563s] [ 46%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/io_cmd__type_support.c.o[0m
+[4.574s] [ 47%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/analog_io__type_support_c.cpp.o[0m
+[4.576s] [ 48%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_payload_value__type_support.cpp.o[0m
+[4.581s] [ 48%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/num_reg_cmd__type_support.cpp.o[0m
+[4.601s] [ 48%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fanuc_msgs/srv/set_payload_comp__type_support.cpp.o[0m
+[4.619s] [ 49%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/num_reg_state__type_support.cpp.o[0m
+[4.620s] [ 50%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/io_state__type_support.c.o[0m
+[4.630s] [ 50%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/num_reg__type_support.c.o[0m
+[4.636s] [ 50%] [32m[1mLinking CXX shared library libfanuc_msgs__rosidl_typesupport_c.so[0m
+[4.649s] [ 50%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/io_state__type_support.cpp.o[0m
+[4.671s] [ 50%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/analog_io_cmd__type_support_c.cpp.o[0m
+[4.686s] [ 50%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/num_reg_cmd__type_support.c.o[0m
+[4.713s] [ 50%] Built target fanuc_msgs__rosidl_typesupport_c
+[4.719s] [ 51%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/num_reg__type_support.cpp.o[0m
+[4.725s] [ 52%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/num_reg_state__type_support.c.o[0m
+[4.742s] [ 52%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/connection_status__type_support.cpp.o[0m
+[4.755s] [ 53%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/robot_status__type_support.cpp.o[0m
+[4.764s] [ 53%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/connection_status__type_support.c.o[0m
+[4.792s] [ 53%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/analog_io_state__type_support_c.cpp.o[0m
+[4.796s] [ 54%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/robot_status__type_support.c.o[0m
+[4.827s] [ 54%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/robot_status_ext__type_support.cpp.o[0m
+[4.829s] [ 54%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/robot_status_ext__type_support.c.o[0m
+[4.829s] [ 54%] [32m[1mLinking CXX shared library libfanuc_msgs__rosidl_typesupport_cpp.so[0m
+[4.831s] [ 55%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/bool_io__type_support_c.cpp.o[0m
+[4.853s] [ 55%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.cpp.o[0m
+[4.865s] [ 56%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_analog_io__type_support.cpp.o[0m
+[4.874s] [ 56%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.c.o[0m
+[4.881s] [ 56%] Built target fanuc_msgs__rosidl_typesupport_cpp
+[4.888s] [ 56%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/get_analog_io__type_support.cpp.o[0m
+[4.890s] [ 57%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_analog_io__type_support.c.o[0m
+[4.913s] [ 57%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/num_reg_cmd__type_support.cpp.o[0m
+[4.955s] [ 57%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/get_analog_io__type_support.c.o[0m
+[4.990s] [ 58%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/num_reg_state__type_support.cpp.o[0m
+[5.004s] [ 59%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_bool_io__type_support.c.o[0m
+[5.021s] [ 59%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/get_bool_io__type_support.c.o[0m
+[5.054s] [ 59%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_group_io__type_support.c.o[0m
+[5.063s] [ 60%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/get_group_io__type_support.c.o[0m
+[5.065s] [ 60%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/connection_status__type_support.cpp.o[0m
+[5.084s] [ 61%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_bool_io__type_support.cpp.o[0m
+[5.085s] [ 61%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/io_cmd__type_support_c.cpp.o[0m
+[5.087s] [ 61%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_num_reg__type_support.c.o[0m
+[5.090s] [ 61%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/get_bool_io__type_support.cpp.o[0m
+[5.102s] [ 62%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/io_state__type_support_c.cpp.o[0m
+[5.128s] [ 62%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_group_io__type_support.cpp.o[0m
+[5.128s] [ 63%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/get_num_reg__type_support.c.o[0m
+[5.160s] [ 64%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/get_group_io__type_support.cpp.o[0m
+[5.168s] [ 64%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/num_reg__type_support_c.cpp.o[0m
+[5.172s] [ 64%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_pos_reg__type_support.c.o[0m
+[5.181s] [ 65%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[5.192s] [ 65%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/robot_status_ext__type_support.cpp.o[0m
+[5.227s] [ 66%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/get_pos_reg__type_support.c.o[0m
+[5.281s] [ 66%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_num_reg__type_support.cpp.o[0m
+[5.289s] [ 66%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_gen_override__type_support.c.o[0m
+[5.292s] [ 66%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/num_reg_cmd__type_support_c.cpp.o[0m
+[5.293s] [ 66%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_payload_id__type_support.c.o[0m
+[5.336s] [ 67%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_payload_value__type_support.c.o[0m
+[5.336s] [ 68%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/num_reg_state__type_support_c.cpp.o[0m
+[5.368s] [ 68%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fanuc_msgs/srv/detail/set_payload_comp__type_support.c.o[0m
+[5.389s] [ 69%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/get_num_reg__type_support.cpp.o[0m
+[5.406s] [ 69%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/msg/detail/dds_fastrtps/collaborative_speed_scaling__type_support.cpp.o[0m
+[5.406s] [ 69%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/connection_status__type_support_c.cpp.o[0m
+[5.419s] [ 70%] [32m[1mLinking C shared library libfanuc_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.432s] [ 71%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_analog_io__type_support.cpp.o[0m
+[5.449s] [ 71%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/get_analog_io__type_support.cpp.o[0m
+[5.456s] [ 72%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_bool_io__type_support.cpp.o[0m
+[5.469s] [ 72%] Built target fanuc_msgs__rosidl_typesupport_introspection_c
+[5.475s] [ 72%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_pos_reg__type_support.cpp.o[0m
+[5.475s] [ 72%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/get_pos_reg__type_support.cpp.o[0m
+[5.477s] [ 73%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/robot_status__type_support_c.cpp.o[0m
+[5.499s] [ 73%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/robot_status_ext__type_support_c.cpp.o[0m
+[5.535s] [ 73%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support_c.cpp.o[0m
+[5.546s] [ 73%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/get_bool_io__type_support.cpp.o[0m
+[5.670s] [ 74%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_analog_io__type_support_c.cpp.o[0m
+[5.696s] [ 74%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/get_analog_io__type_support_c.cpp.o[0m
+[5.699s] [ 74%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_group_io__type_support.cpp.o[0m
+[5.729s] [ 75%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/get_group_io__type_support.cpp.o[0m
+[5.751s] [ 75%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_num_reg__type_support.cpp.o[0m
+[5.764s] [ 76%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_bool_io__type_support_c.cpp.o[0m
+[5.798s] [ 77%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/get_num_reg__type_support.cpp.o[0m
+[5.800s] [ 78%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_gen_override__type_support.cpp.o[0m
+[5.813s] [ 78%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_pos_reg__type_support.cpp.o[0m
+[5.814s] [ 78%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/get_bool_io__type_support_c.cpp.o[0m
+[5.841s] [ 78%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_group_io__type_support_c.cpp.o[0m
+[5.907s] [ 78%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_payload_id__type_support.cpp.o[0m
+[5.910s] [ 79%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/get_group_io__type_support_c.cpp.o[0m
+[5.919s] [ 79%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/get_pos_reg__type_support.cpp.o[0m
+[5.985s] [ 80%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_payload_value__type_support.cpp.o[0m
+[5.998s] [ 80%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fanuc_msgs/srv/detail/set_payload_comp__type_support.cpp.o[0m
+[6.076s] [ 80%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_num_reg__type_support_c.cpp.o[0m
+[6.079s] [ 81%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/get_num_reg__type_support_c.cpp.o[0m
+[6.117s] [ 81%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_pos_reg__type_support_c.cpp.o[0m
+[6.131s] [ 81%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/get_pos_reg__type_support_c.cpp.o[0m
+[6.139s] [ 82%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_gen_override__type_support_c.cpp.o[0m
+[6.156s] [ 82%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_payload_id__type_support_c.cpp.o[0m
+[6.166s] [ 83%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_payload_value__type_support_c.cpp.o[0m
+[6.173s] [ 84%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_gen_override__type_support.cpp.o[0m
+[6.179s] [ 84%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fanuc_msgs/srv/detail/set_payload_comp__type_support_c.cpp.o[0m
+[6.219s] [ 84%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_payload_id__type_support.cpp.o[0m
+[6.229s] [ 85%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_payload_value__type_support.cpp.o[0m
+[6.340s] [ 85%] [32mBuilding CXX object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fanuc_msgs/srv/detail/dds_fastrtps/set_payload_comp__type_support.cpp.o[0m
+[6.453s] [ 86%] [32m[1mLinking CXX shared library libfanuc_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.519s] [ 86%] Built target fanuc_msgs__rosidl_typesupport_introspection_cpp
+[6.536s] [ 86%] [32m[1mLinking CXX shared library libfanuc_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.582s] [ 86%] Built target fanuc_msgs__rosidl_typesupport_fastrtps_c
+[6.609s] [ 86%] [32m[1mLinking CXX shared library libfanuc_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.656s] [ 86%] Built target fanuc_msgs__rosidl_typesupport_fastrtps_cpp
+[6.663s] [ 86%] Built target fanuc_msgs
+[6.670s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.109s] [ 86%] Built target fanuc_msgs__py
+[9.117s] [ 87%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_io_type_s.c.o[0m
+[9.117s] [ 88%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_analog_io_cmd_s.c.o[0m
+[9.117s] [ 88%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_analog_io_s.c.o[0m
+[9.117s] [ 88%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_analog_io_state_s.c.o[0m
+[9.117s] [ 88%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_bool_io_s.c.o[0m
+[9.117s] [ 89%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_io_state_s.c.o[0m
+[9.117s] [ 89%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_io_cmd_s.c.o[0m
+[9.117s] [ 90%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_num_reg_s.c.o[0m
+[9.117s] [ 90%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_num_reg_cmd_s.c.o[0m
+[9.118s] [ 90%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_robot_status_s.c.o[0m
+[9.118s] [ 91%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_num_reg_state_s.c.o[0m
+[9.118s] [ 91%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_connection_status_s.c.o[0m
+[9.118s] [ 92%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_robot_status_ext_s.c.o[0m
+[9.119s] [ 92%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/msg/_collaborative_speed_scaling_s.c.o[0m
+[9.119s] [ 93%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_analog_io_s.c.o[0m
+[9.123s] [ 93%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_get_analog_io_s.c.o[0m
+[9.217s] [ 93%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_bool_io_s.c.o[0m
+[9.219s] [ 93%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_group_io_s.c.o[0m
+[9.219s] [ 94%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_get_bool_io_s.c.o[0m
+[9.219s] [ 94%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_num_reg_s.c.o[0m
+[9.219s] [ 95%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_pos_reg_s.c.o[0m
+[9.219s] [ 95%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_get_pos_reg_s.c.o[0m
+[9.219s] [ 95%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_get_num_reg_s.c.o[0m
+[9.219s] [ 96%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_get_group_io_s.c.o[0m
+[9.220s] [ 96%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_payload_id_s.c.o[0m
+[9.221s] [ 97%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_gen_override_s.c.o[0m
+[9.224s] [ 97%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_payload_value_s.c.o[0m
+[9.224s] [ 98%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_generator_py.dir/rosidl_generator_py/fanuc_msgs/srv/_set_payload_comp_s.c.o[0m
+[9.314s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/fanuc_msgs/libfanuc_msgs__rosidl_generator_py.so[0m
+[9.338s] [ 98%] Built target fanuc_msgs__rosidl_generator_py
+[9.345s] [ 99%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.346s] [ 99%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.348s] [100%] [32mBuilding C object CMakeFiles/fanuc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[9.464s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.467s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.477s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.481s] [100%] Built target fanuc_msgs__rosidl_typesupport_introspection_c__pyext
+[9.484s] [100%] Built target fanuc_msgs__rosidl_typesupport_fastrtps_c__pyext
+[9.493s] [100%] Built target fanuc_msgs__rosidl_typesupport_c__pyext
+[9.497s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hualde/misCosas/ws_fanuc/build/fanuc_msgs -- -j16 -l16
+[9.498s] Invoking command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_msgs
+[9.501s] -- Install configuration: ""
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/ament_index/resource_index/rosidl_interfaces/fanuc_msgs
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__functions.c
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__functions.c
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__struct.h
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__type_support.h
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__struct.h
+[9.501s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__struct.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__struct.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__type_support.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__functions.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__struct.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__functions.c
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__type_support.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__functions.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__struct.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__type_support.h
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__functions.c
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__functions.c
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__functions.c
+[9.502s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__functions.c
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__struct.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__struct.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__type_support.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__type_support.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__type_support.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__functions.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__functions.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__functions.c
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__struct.h
+[9.503s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__functions.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__functions.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__functions.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__struct.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__type_support.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__functions.c
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__functions.c
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__type_support.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__struct.h
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__functions.c
+[9.504s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__functions.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__functions.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__type_support.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__struct.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__type_support.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__functions.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__struct.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__type_support.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__functions.c
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__functions.c
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__functions.h
+[9.505s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__functions.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__functions.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__functions.c
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__functions.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__type_support.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__struct.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/collaborative_speed_scaling.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_cmd.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_state.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_type.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/connection_status.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io.h
+[9.506s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/bool_io.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg_state.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io_state.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/robot_status.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io_cmd.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/robot_status_ext.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg_cmd.h
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__functions.c
+[9.507s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__functions.h
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__struct.h
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__functions.h
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__functions.c
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__type_support.h
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__functions.c
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__functions.h
+[9.508s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__functions.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__type_support.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__functions.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__struct.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__functions.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__functions.c
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__type_support.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__struct.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__functions.c
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__functions.c
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__struct.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__type_support.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__functions.c
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__functions.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__type_support.h
+[9.509s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__functions.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__type_support.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__type_support.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__functions.c
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__struct.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__struct.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__functions.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__functions.c
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__functions.c
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__struct.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__struct.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__functions.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__struct.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__type_support.h
+[9.510s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__type_support.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__functions.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__functions.c
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__struct.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__struct.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__functions.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__type_support.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__functions.c
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__struct.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__struct.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__functions.c
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__struct.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__type_support.h
+[9.511s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__functions.c
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__type_support.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__type_support.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__functions.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__functions.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__type_support.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_analog_io.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_value.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_bool_io.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_id.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_gen_override.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_num_reg.h
+[9.512s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_comp.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_bool_io.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_pos_reg.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_pos_reg.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_group_io.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_num_reg.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_group_io.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_analog_io.h
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/library_path.sh
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/library_path.dsv
+[9.513s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_generator_c.so
+[9.514s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_generator_c.so" to ""
+[9.514s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.514s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.514s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__rosidl_typesupport_fastrtps_c.h
+[9.514s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.515s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.515s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__rosidl_typesupport_fastrtps_c.h
+[9.515s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__rosidl_typesupport_fastrtps_c.h
+[9.516s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_fastrtps_c.so
+[9.516s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.517s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.517s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.517s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__type_support.c
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__type_support.c
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__type_support.c
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__type_support.c
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__type_support.c
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[9.517s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__rosidl_typesupport_introspection_c.h
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__type_support.c
+[9.518s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__type_support.c
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__rosidl_typesupport_introspection_c.h
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__rosidl_typesupport_introspection_c.h
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__type_support.c
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.c
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.519s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.519s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__type_support.c
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__rosidl_typesupport_introspection_c.h
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__type_support.c
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__rosidl_typesupport_introspection_c.h
+[9.519s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__rosidl_typesupport_introspection_c.h
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__rosidl_typesupport_introspection_c.h
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__rosidl_typesupport_introspection_c.h
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__rosidl_typesupport_introspection_c.h
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__rosidl_typesupport_introspection_c.h
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__type_support.c
+[9.520s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__rosidl_typesupport_introspection_c.h
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__type_support.c
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__type_support.c
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__rosidl_typesupport_introspection_c.h
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__type_support.c
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__type_support.c
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__type_support.c
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__rosidl_typesupport_introspection_c.h
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__rosidl_typesupport_introspection_c.h
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__rosidl_typesupport_introspection_c.h
+[9.521s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__rosidl_typesupport_introspection_c.h
+[9.522s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__rosidl_typesupport_introspection_c.h
+[9.522s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__type_support.c
+[9.522s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_introspection_c.so
+[9.522s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.522s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_c.so
+[9.523s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_c.so" to ""
+[9.523s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.523s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.523s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__builder.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__builder.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__struct.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__builder.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__type_support.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__traits.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__type_support.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__struct.hpp
+[9.523s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__builder.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__struct.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__builder.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__traits.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__struct.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__struct.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__type_support.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__type_support.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__traits.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__traits.hpp
+[9.524s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__traits.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__traits.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__struct.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__builder.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__traits.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__traits.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__builder.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__struct.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__type_support.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__type_support.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__struct.hpp
+[9.525s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__struct.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__traits.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__type_support.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__type_support.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__traits.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__builder.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__struct.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__type_support.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__struct.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__builder.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__struct.hpp
+[9.526s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__struct.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__type_support.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__builder.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__type_support.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__struct.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__type_support.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__type_support.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__traits.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__builder.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__traits.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__builder.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__traits.hpp
+[9.527s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__builder.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__traits.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__builder.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/bool_io.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/collaborative_speed_scaling.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_cmd.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/robot_status_ext.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/connection_status.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_type.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg_cmd.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/robot_status.hpp
+[9.528s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/io_state.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io_cmd.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/num_reg_state.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/analog_io_state.hpp
+[9.529s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.529s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__builder.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__builder.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__builder.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__struct.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__builder.hpp
+[9.529s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__traits.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__struct.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__traits.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__type_support.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__traits.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__traits.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__type_support.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__struct.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__type_support.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__struct.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__builder.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__type_support.hpp
+[9.530s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__type_support.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__traits.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__traits.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__builder.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__builder.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__type_support.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__builder.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__struct.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__traits.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__struct.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__struct.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__builder.hpp
+[9.531s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__type_support.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__builder.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__traits.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__traits.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__traits.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__struct.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__type_support.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__type_support.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__builder.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__struct.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__struct.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__type_support.hpp
+[9.532s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__type_support.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__struct.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__builder.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__type_support.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__traits.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__type_support.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__traits.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__builder.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__struct.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__traits.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__builder.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__traits.hpp
+[9.533s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__type_support.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__struct.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__struct.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_id.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_analog_io.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_num_reg.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_pos_reg.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_group_io.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_comp.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_analog_io.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_num_reg.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_bool_io.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_pos_reg.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_group_io.hpp
+[9.534s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_payload_value.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/get_bool_io.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/set_gen_override.hpp
+[9.535s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.535s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.535s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/dds_fastrtps
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__rosidl_typesupport_fastrtps_cpp.hpp
+[9.535s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.536s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.536s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.536s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/dds_fastrtps
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__rosidl_typesupport_fastrtps_cpp.hpp
+[9.537s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__rosidl_typesupport_fastrtps_cpp.hpp
+[9.538s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.539s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.539s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs
+[9.539s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg
+[9.539s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__rosidl_typesupport_introspection_cpp.hpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__type_support.cpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__rosidl_typesupport_introspection_cpp.hpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__rosidl_typesupport_introspection_cpp.hpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__rosidl_typesupport_introspection_cpp.hpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__rosidl_typesupport_introspection_cpp.hpp
+[9.539s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__rosidl_typesupport_introspection_cpp.hpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_cmd__rosidl_typesupport_introspection_cpp.hpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__rosidl_typesupport_introspection_cpp.hpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io__rosidl_typesupport_introspection_cpp.hpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/connection_status__type_support.cpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/collaborative_speed_scaling__rosidl_typesupport_introspection_cpp.hpp
+[9.540s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status_ext__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__rosidl_typesupport_introspection_cpp.hpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_state__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_cmd__rosidl_typesupport_introspection_cpp.hpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_type__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/analog_io_cmd__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/bool_io__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/io_state__rosidl_typesupport_introspection_cpp.hpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/num_reg_state__type_support.cpp
+[9.541s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/msg/detail/robot_status__type_support.cpp
+[9.541s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv
+[9.542s] -- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__type_support.cpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__rosidl_typesupport_introspection_cpp.hpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__rosidl_typesupport_introspection_cpp.hpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__rosidl_typesupport_introspection_cpp.hpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__rosidl_typesupport_introspection_cpp.hpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__type_support.cpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__type_support.cpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_gen_override__rosidl_typesupport_introspection_cpp.hpp
+[9.542s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__type_support.cpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_bool_io__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__type_support.cpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__type_support.cpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_pos_reg__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_group_io__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__type_support.cpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_pos_reg__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__rosidl_typesupport_introspection_cpp.hpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_analog_io__type_support.cpp
+[9.543s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_analog_io__rosidl_typesupport_introspection_cpp.hpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_num_reg__rosidl_typesupport_introspection_cpp.hpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_id__rosidl_typesupport_introspection_cpp.hpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_comp__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_group_io__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_payload_value__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/set_num_reg__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/include/fanuc_msgs/fanuc_msgs/srv/detail/get_bool_io__type_support.cpp
+[9.544s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_introspection_cpp.so
+[9.545s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.545s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_cpp.so
+[9.545s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_typesupport_cpp.so" to ""
+[9.545s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/pythonpath.sh
+[9.545s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/pythonpath.dsv
+[9.545s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs-1.1.1-py3.10.egg-info
+[9.545s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs-1.1.1-py3.10.egg-info/SOURCES.txt
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs-1.1.1-py3.10.egg-info/PKG-INFO
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs-1.1.1-py3.10.egg-info/top_level.txt
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs-1.1.1-py3.10.egg-info/dependency_links.txt
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_connection_status_s.c
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_state.py
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_cmd.py
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_cmd.py
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_collaborative_speed_scaling_s.c
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_state_s.c
+[9.546s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_type.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_cmd_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_state.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_bool_io_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status_ext_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_type_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status_ext.py
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_cmd_s.c
+[9.547s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_state.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_state_s.c
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_state_s.c
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_connection_status.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_cmd.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_cmd_s.c
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/__init__.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_bool_io.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_s.c
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_collaborative_speed_scaling.py
+[9.548s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.549s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.549s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/libfanuc_msgs__rosidl_generator_py.so
+[9.549s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/_fanuc_msgs_s.ep.rosidl_typesupport_c.c
+[9.549s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv
+[9.549s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_pos_reg_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_gen_override.py
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_comp_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_num_reg.py
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_group_io_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_value_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_id.py
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_pos_reg_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_num_reg_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_bool_io_s.c
+[9.550s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_bool_io.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_num_reg_s.c
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_group_io.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_analog_io_s.c
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_analog_io_s.c
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_bool_io.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_analog_io.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_num_reg.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_analog_io.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/__init__.py
+[9.551s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_comp.py
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_gen_override_s.c
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_bool_io_s.c
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_group_io_s.c
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_pos_reg.py
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_group_io.py
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_pos_reg.py
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_value.py
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_id_s.c
+[9.552s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.553s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/__init__.py
+[9.553s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.553s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.595s] Listing '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/__init__.py'...
+[9.595s] Listing '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/__init__.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_cmd.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_analog_io_state.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_bool_io.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_collaborative_speed_scaling.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_connection_status.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_cmd.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_state.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_io_type.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_cmd.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_num_reg_state.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status.py'...
+[9.595s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/msg/_robot_status_ext.py'...
+[9.596s] Listing '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/__init__.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_analog_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_bool_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_group_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_num_reg.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_get_pos_reg.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_analog_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_bool_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_gen_override.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_group_io.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_num_reg.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_comp.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_id.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_payload_value.py'...
+[9.596s] Compiling '/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/srv/_set_pos_reg.py'...
+[9.598s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.599s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.599s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.599s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.599s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.599s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/local/lib/python3.10/dist-packages/fanuc_msgs/fanuc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.599s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_generator_py.so
+[9.600s] -- Set runtime path of "/home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/lib/libfanuc_msgs__rosidl_generator_py.so" to ""
+[9.600s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOType.idl
+[9.600s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIO.idl
+[9.600s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIOCmd.idl
+[9.600s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIOState.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/BoolIO.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOCmd.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOState.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumReg.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumRegCmd.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumRegState.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/ConnectionStatus.idl
+[9.601s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/RobotStatus.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/RobotStatusExt.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/CollaborativeSpeedScaling.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetAnalogIO.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetAnalogIO.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetBoolIO.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetBoolIO.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGroupIO.idl
+[9.602s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetGroupIO.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetNumReg.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetNumReg.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPosReg.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetPosReg.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGenOverride.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadID.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadValue.idl
+[9.603s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadComp.idl
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOType.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIO.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIOCmd.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/AnalogIOState.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/BoolIO.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOCmd.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/IOState.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumReg.msg
+[9.604s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumRegCmd.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/NumRegState.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/ConnectionStatus.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/RobotStatus.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/RobotStatusExt.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/msg/CollaborativeSpeedScaling.msg
+[9.605s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetAnalogIO.srv
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetAnalogIO_Request.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetAnalogIO_Response.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetAnalogIO.srv
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetAnalogIO_Request.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetAnalogIO_Response.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetBoolIO.srv
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetBoolIO_Request.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetBoolIO_Response.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetBoolIO.srv
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetBoolIO_Request.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetBoolIO_Response.msg
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGroupIO.srv
+[9.607s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGroupIO_Request.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGroupIO_Response.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetGroupIO.srv
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetGroupIO_Request.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetGroupIO_Response.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetNumReg.srv
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetNumReg_Request.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetNumReg_Response.msg
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetNumReg.srv
+[9.608s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetNumReg_Request.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetNumReg_Response.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPosReg.srv
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPosReg_Request.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPosReg_Response.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetPosReg.srv
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetPosReg_Request.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/GetPosReg_Response.msg
+[9.609s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGenOverride.srv
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGenOverride_Request.msg
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetGenOverride_Response.msg
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadID.srv
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadID_Request.msg
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadID_Response.msg
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadValue.srv
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadValue_Request.msg
+[9.610s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadValue_Response.msg
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadComp.srv
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadComp_Request.msg
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/srv/SetPayloadComp_Response.msg
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/ament_index/resource_index/package_run_dependencies/fanuc_msgs
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/ament_index/resource_index/parent_prefix_path/fanuc_msgs
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/ament_prefix_path.sh
+[9.611s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/ament_prefix_path.dsv
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/path.sh
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/environment/path.dsv
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/local_setup.bash
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/local_setup.sh
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/local_setup.zsh
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/local_setup.dsv
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/package.dsv
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/ament_index/resource_index/packages/fanuc_msgs
+[9.612s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_generator_cExport.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_cExport.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.613s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_generator_cppExport.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_cppExport.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_generator_pyExport.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/export_fanuc_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.614s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/rosidl_cmake-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgsConfig.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/cmake/fanuc_msgsConfig-version.cmake
+[9.615s] -- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_msgs/share/fanuc_msgs/package.xml
+[9.617s] Invoked command in '/home/hualde/misCosas/ws_fanuc/build/fanuc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hualde/misCosas/ws_fanuc/build/fanuc_msgs

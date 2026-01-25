@@ -1,0 +1,26 @@
+[ 33%] Built target scaled_joint_trajectory_controller
+[ 66%] Built target fanuc_gpio_controller
+[100%] Built target fanuc_gpio_controller_test
+-- Install configuration: ""
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libscaled_joint_trajectory_controller.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/lib/fanuc_controllers/libfanuc_gpio_controller.so
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/scaled_joint_trajectory_controller_plugins.xml
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/fanuc_gpio_controller_plugins.xml
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/scaled_joint_trajectory_controller_plugins.xml
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/fanuc_gpio_controller_plugins.xml
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/package_run_dependencies/fanuc_controllers
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/parent_prefix_path/fanuc_controllers
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/path.sh
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/environment/path.dsv
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.bash
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.sh
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.zsh
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/local_setup.dsv
+-- Installing: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/package.dsv
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/packages/fanuc_controllers
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/fanuc_controllers
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/cmake/fanuc_controllersConfig.cmake
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/cmake/fanuc_controllersConfig-version.cmake
+-- Up-to-date: /home/hualde/misCosas/ws_fanuc/install/fanuc_controllers/share/fanuc_controllers/package.xml

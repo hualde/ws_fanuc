@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from fanuc_msgs/srv/SetNumReg.srv
+// generated code does not contain a copyright notice
+
+
+module fanuc_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "SPDX-FileCopyrightText: 2025, FANUC America Corporation" "\n"
+      "SPDX-FileCopyrightText: 2025, FANUC CORPORATION" "\n"
+      "" "\n"
+      "SPDX-License-Identifier: Apache-2.0")
+    struct SetNumReg_Request {
+      uint16 index;
+
+      float value;
+    };
+    struct SetNumReg_Response {
+      int32 result;
+    };
+  };
+};

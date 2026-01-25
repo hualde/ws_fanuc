@@ -1,0 +1,2 @@
+share/fanuc_controllers/scaled_joint_trajectory_controller_plugins.xml
+share/fanuc_controllers/fanuc_gpio_controller_plugins.xml
