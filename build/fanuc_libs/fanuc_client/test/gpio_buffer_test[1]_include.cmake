@@ -1,5 +1,0 @@
-if(EXISTS "/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/gpio_buffer_test[1]_tests.cmake")
-  include("/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/gpio_buffer_test[1]_tests.cmake")
-else()
-  add_test(gpio_buffer_test_NOT_BUILT gpio_buffer_test_NOT_BUILT)
-endif()

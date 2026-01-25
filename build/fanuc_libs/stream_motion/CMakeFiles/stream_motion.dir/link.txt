@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libstream_motion.so -o libstream_motion.so CMakeFiles/stream_motion.dir/src/stream.cpp.o CMakeFiles/stream_motion.dir/src/byte_ops.cpp.o  ../_deps/sockpp-build/src/libsockpp.a 

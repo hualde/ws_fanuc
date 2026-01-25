@@ -1,2 +1,0 @@
-/usr/bin/ar qc libreflectcpp.a CMakeFiles/reflectcpp.dir/src/reflectcpp.cpp.o CMakeFiles/reflectcpp.dir/src/reflectcpp_json.cpp.o CMakeFiles/reflectcpp.dir/src/yyjson.c.o CMakeFiles/reflectcpp.dir/src/reflectcpp_yaml.cpp.o
-/usr/bin/ranlib libreflectcpp.a

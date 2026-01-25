@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,librmi.so -o librmi.so CMakeFiles/rmi.dir/src/rmi.cpp.o CMakeFiles/rmi.dir/src/serialization.cpp.o CMakeFiles/rmi.dir/src/deserialization.cpp.o  ../_deps/reflect-cpp-build/libreflectcpp.a ../_deps/sockpp-build/src/libsockpp.a ../_deps/yaml-cpp-build/libyaml-cpp.a 

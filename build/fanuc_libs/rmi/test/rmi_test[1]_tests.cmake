@@ -1,5 +1,0 @@
-add_test([=[ToJSON.ConnectPacket]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test/rmi_test [==[--gtest_filter=ToJSON.ConnectPacket]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[ToJSON.ConnectPacket]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[FromJSON.ConnectPacketResponse]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test/rmi_test [==[--gtest_filter=FromJSON.ConnectPacketResponse]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FromJSON.ConnectPacketResponse]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/rmi/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  rmi_test_TESTS ToJSON.ConnectPacket FromJSON.ConnectPacketResponse)

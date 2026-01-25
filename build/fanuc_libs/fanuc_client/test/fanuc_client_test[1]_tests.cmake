@@ -1,7 +1,0 @@
-add_test([=[FanucClientTest.TestSuccessfulLifecycle]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/fanuc_client_test [==[--gtest_filter=FanucClientTest.TestSuccessfulLifecycle]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FanucClientTest.TestSuccessfulLifecycle]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[FanucClientTest.TestGetLimits]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/fanuc_client_test [==[--gtest_filter=FanucClientTest.TestGetLimits]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[FanucClientTest.TestGetLimits]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[RMISington.OnlyOneInstanceCreated]=]  /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test/fanuc_client_test [==[--gtest_filter=RMISington.OnlyOneInstanceCreated]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[RMISington.OnlyOneInstanceCreated]=]  PROPERTIES WORKING_DIRECTORY /home/hualde/misCosas/ws_fanuc/build/fanuc_libs/fanuc_client/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  fanuc_client_test_TESTS FanucClientTest.TestSuccessfulLifecycle FanucClientTest.TestGetLimits RMISington.OnlyOneInstanceCreated)

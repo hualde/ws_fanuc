@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/stream_motion_test.dir/stream_test.cpp.o -o stream_motion_test  -Wl,-rpath,/home/hualde/misCosas/ws_fanuc/build/fanuc_libs/stream_motion ../libstream_motion.so ../../lib/libgtest_main.a ../../_deps/sockpp-build/src/libsockpp.a ../../lib/libgtest.a 

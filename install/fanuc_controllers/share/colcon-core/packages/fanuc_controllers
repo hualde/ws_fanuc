@@ -1,1 +1,0 @@
-controller_interface:fanuc_hardware_interface:fanuc_libs:fanuc_msgs:geometry_msgs:hardware_interface:joint_trajectory_controller:lifecycle_msgs:pluginlib:rclcpp:realtime_tools:sensor_msgs:std_msgs:trajectory_msgs

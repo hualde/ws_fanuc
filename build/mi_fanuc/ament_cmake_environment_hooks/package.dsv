@@ -1,4 +1,0 @@
-source;share/mi_fanuc/local_setup.bash
-source;share/mi_fanuc/local_setup.dsv
-source;share/mi_fanuc/local_setup.sh
-source;share/mi_fanuc/local_setup.zsh

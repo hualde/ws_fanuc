@@ -1,0 +1,62 @@
+# ===============================
+# ROS / ROS2 workspace
+# ===============================
+build/
+install/
+log/
+
+# colcon
+.colcon/
+.colcon_install_layout
+
+# ===============================
+# CMake
+# ===============================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ===============================
+# CMake FetchContent / deps
+# ===============================
+**/_deps/
+**/build/_deps/
+
+# ===============================
+# Generated package files
+# ===============================
+**/ament_cmake_core/
+**/*.stamp
+
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+
+# ===============================
+# VS Code
+# ===============================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ===============================
+# OS / editor junk
+# ===============================
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# ===============================
+# Logs & temp
+# ===============================
+*.log
+
+# ===============================
+# Ignore nested git repos accidentally added
+# ===============================
+**/.git
