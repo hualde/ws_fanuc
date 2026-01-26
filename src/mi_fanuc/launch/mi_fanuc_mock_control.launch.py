@@ -55,35 +55,60 @@ def launch_setup(context, *args, **kwargs):
         arguments=["--display-config", rviz_config],
     )
 
-    # Static Transform Publisher (robot base to world if needed, though world is in URDF)
-    # static_tf = Node(
-    #     package="tf2_ros",
-    #     executable="static_transform_publisher",
-    #     name="static_transform_publisher",
-    #     arguments=["0", "0", "0", "0", "0", "0", "world", "base_link"],
-    # )
+    # Robot State Publisher
+    robot_state_publisher_node = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        output="screen",
+        parameters=[moveit_config.robot_description],
+    )
 
-    # Include mock control if use_mock is true
-    # We'll use the original hardware interface launch but with our URDF
-    include_fanuc_mock_control = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution([
-                FindPackageShare("fanuc_hardware_interface"),
-                "launch",
-                "fanuc_mock_control.launch.py",
-            ])
-        ),
-        launch_arguments={
-            "robot_model": "crx30ia", # This is used by the hardware interface to find specific configs
-            "robot_series": "crx",
-            "launch_rviz": "false",
-        }.items(),
+    # ROS 2 Control Node
+    ros2_control_config = os.path.join(mi_fanuc_share, "config", "ros2_controllers.yaml")
+    ros2_control_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[
+            moveit_config.robot_description,
+            ros2_control_config,
+        ],
+        output="screen",
+    )
+
+    # Controller Spawners
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+    joint_trajectory_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_trajectory_controller", "--controller-manager", "/controller_manager"],
+    )
+
+    gripper_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["gripper_controller", "--controller-manager", "/controller_manager"],
+    )
+
+    fanuc_gpio_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["fanuc_gpio_controller", "--controller-manager", "/controller_manager"],
     )
 
     return [
         move_group_node,
         rviz_node,
-        include_fanuc_mock_control
+        robot_state_publisher_node,
+        ros2_control_node,
+        joint_state_broadcaster_spawner,
+        joint_trajectory_controller_spawner,
+        gripper_controller_spawner,
+        fanuc_gpio_controller_spawner,
     ]
 
 def generate_launch_description():

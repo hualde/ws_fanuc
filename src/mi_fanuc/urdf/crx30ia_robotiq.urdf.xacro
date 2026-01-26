@@ -4,6 +4,8 @@
   <xacro:include filename="$(find fanuc_crx_description)/urdf/crx30ia_urdf_macro.xacro" />
   <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro" />
 
+  <xacro:include filename="$(find fanuc_hardware_interface)/config/6dof_robot_mock_ros2_control_macro.xacro" />
+
   <!-- World link -->
   <link name="world" />
 
@@ -14,6 +16,9 @@
   <xacro:crx30ia parent="world" child="ee_link" prefix="">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:crx30ia>
+
+  <!-- Instantiate Robot Control (for ScaledJointTrajectoryController) -->
+  <xacro:robot_control name="crx30ia_robotiq" prefix="" />
 
   <!-- Instantiate Gripper -->
   <xacro:robotiq_gripper 
