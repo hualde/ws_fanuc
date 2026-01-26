@@ -16,6 +16,7 @@
   <exec_depend>fanuc_m20_description</exec_depend>
   <exec_depend>fanuc_r1000ia_description</exec_depend>
   <exec_depend>fanuc_r2000_description</exec_depend>
+  <exec_depend>robotiq_description</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>gazebo_ros_pkgs</exec_depend>
 
