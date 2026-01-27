@@ -17,8 +17,12 @@ class RealTimeSegDetector(Node):
         super().__init__('realtime_seg_detector')
         
         # MODELO DE SEGMENTACION (V4)
-        model_path = os.path.expanduser(
-            '~/misCosas/steering/runs/segment/runs/segment/steering_segmentation/weights/best.pt'
+        model_path = os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            '..',
+            'weights',
+            'best.pt'
         )
         
         self.model = YOLO(model_path)
