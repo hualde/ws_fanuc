@@ -33,3 +33,5 @@ Thumbs.db
 
 # Ignore nested git repos
 **/.git
+
+**/yolo_env

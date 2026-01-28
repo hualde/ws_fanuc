@@ -19,8 +19,10 @@ class RealTimeSegDetector(Node):
         # MODELO DE SEGMENTACION (V4)
         model_path = os.path.join(
             os.path.dirname(__file__),
-            '..',
-            '..',
+            'segment',
+            'runs',
+            'segment',
+            'steering_segmentation',
             'weights',
             'best.pt'
         )
