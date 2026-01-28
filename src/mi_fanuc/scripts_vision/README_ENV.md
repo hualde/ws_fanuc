@@ -12,142 +12,84 @@ Sistema de detección y segmentación en tiempo real usando YOLOv8 con cámara R
 ## 🔧 Instalación del Entorno Virtual
 
 ### 1. Crear el entorno virtual
-
 ```bash
-cd ~/misCosas/steering
-python3 -m venv yolo_train_env
+cd ~/misCosas/ws_fanuc/src/mi_fanuc/scripts_vision
+python3 -m venv yolo_env
 ```
 
 ### 2. Activar el entorno
-
 ```bash
-source ~/misCosas/steering/yolo_train_env/bin/activate
+source yolo_env/bin/activate
 ```
 
-### 3. Actualizar pip
-
+### 3. Actualizar pip e instalar dependencias
 ```bash
+# Actualizar pip
 pip install --upgrade pip
-```
 
-### 4. Instalar dependencias principales
+# IMPORTANTE: NumPy 1.x para compatibilidad con ROS2 cv_bridge
+pip install "numpy<2"
 
-```bash
-# PyTorch con soporte CUDA 12.8
-pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu128
+# OpenCV
+pip install opencv-python
 
 # YOLO y Ultralytics
-pip install ultralytics==8.4.7
+pip install ultralytics
 
-# OpenCV con módulos contrib
-pip install opencv-contrib-python==4.10.0.84
+# PyTorch (si necesitas GPU con CUDA 12.x)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
-# Dependencias científicas
-pip install numpy==1.26.4
-pip install scipy==1.15.3
-pip install matplotlib==3.10.8
-
-# Análisis de datos
-pip install polars==1.37.1
-pip install psutil==7.2.1
-
-# Utilidades
-pip install pyyaml==6.0.3
-pip install requests==2.32.5
-pip install certifi==2026.1.4
+# Dependencias adicionales
+pip install matplotlib scipy pyyaml
 ```
 
-### 5. Instalar bridge de ROS2 (fuera del venv)
+### 4. Configurar .gitignore
 
-**IMPORTANTE:** Desactiva el entorno virtual primero:
-
-```bash
-deactivate
-```
-
-Luego instala el bridge de CV (esto debe hacerse con el Python del sistema):
-
-```bash
-sudo apt update
-sudo apt install ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv
+Asegúrate de tener en tu `.gitignore`:
+```gitignore
+# Entornos virtuales
+yolo_env/
+*_env/
+venv/
 ```
 
 ## 📁 Estructura del Proyecto
-
 ```
-ros2_robotiq_gripper-humble/
-├── launch/
+mi_fanuc/
 ├── scripts_vision/
+│   ├── realtime_seg_detector.py
+│   ├── yolo_env/                    # ← Entorno virtual (ignorado por git)
 │   └── segment/
-│       └── realtime_seg_detector.py
-├── weights/                    # ← Crear esta carpeta
-│   └── best.pt                # ← Copiar tu modelo aquí
-├── urdf/
-├── CMakeLists.txt
-├── package.xml
-└── README_ENV.md              # ← Este archivo
+│       └── runs/segment/steering_segmentation/
+│           └── weights/
+│               └── best.pt          # ← Tu modelo entrenado
+├── launch/
+└── .gitignore
 ```
 
-## 🚀 Configuración del Script
+## 🚀 Ejecución
 
-### 1. Copiar el modelo entrenado
-
+### Opción 1: Activar entorno y ejecutar
 ```bash
-# Crear carpeta de pesos
-mkdir -p ~/ros2_ws/src/ros2_robotiq_gripper-humble/weights
+# Terminal 1: Activar entorno virtual
+cd ~/misCosas/ws_fanuc/src/mi_fanuc/scripts_vision
+source yolo_env/bin/activate
 
-# Copiar el modelo (ajusta la ruta origen según donde esté tu best.pt)
-cp ~/misCosas/steering/runs/segment/runs/segment/steering_segmentation/weights/best.pt \
-   ~/ros2_ws/src/ros2_robotiq_gripper-humble/weights/
+# Ejecutar el script
+python3 realtime_seg_detector.py
 ```
 
-### 2. Modificar la ruta en el script
-
-Edita `realtime_seg_detector.py` y cambia la línea del model_path:
-
-```python
-# MODELO DE SEGMENTACION (V4)
-model_path = os.path.join(
-    os.path.dirname(__file__),
-    '..',
-    '..',
-    'weights',
-    'best.pt'
-)
-```
-
-### 3. Hacer el script ejecutable
-
-```bash
-chmod +x ~/ros2_ws/src/ros2_robotiq_gripper-humble/scripts_vision/segment/realtime_seg_detector.py
-```
-
-## ▶️ Ejecución
-
-### Opción 1: Con el entorno virtual activado
-
-```bash
-# Terminal 1: Activar entorno
-source ~/misCosas/steering/yolo_train_env/bin/activate
-source ~/ros2_ws/install/setup.bash
-
-# Ejecutar el nodo
-ros2 run ros2_robotiq_gripper-humble realtime_seg_detector.py
-```
-
-### Opción 2: Script de launcher automatizado
+### Opción 2: Script launcher automatizado
 
 Crea un script `run_detector.sh`:
-
 ```bash
 #!/bin/bash
-source ~/misCosas/steering/yolo_train_env/bin/activate
-source ~/ros2_ws/install/setup.bash
-ros2 run ros2_robotiq_gripper-humble realtime_seg_detector.py
+cd ~/misCosas/ws_fanuc/src/mi_fanuc/scripts_vision
+source yolo_env/bin/activate
+python3 realtime_seg_detector.py
 ```
 
 Hazlo ejecutable y úsalo:
-
 ```bash
 chmod +x run_detector.sh
 ./run_detector.sh
@@ -155,7 +97,6 @@ chmod +x run_detector.sh
 
 ## 📊 Topics Publicados
 
-- `/steering_rack_centroid` (geometry_msgs/Point): Centroide 2D
 - `/steering_rack_pose` (geometry_msgs/PoseStamped): Pose 3D con orientación
 
 ## 📸 Topics Suscritos
@@ -166,29 +107,37 @@ chmod +x run_detector.sh
 ## 🎮 Controles
 
 - **Q**: Salir del programa
-- **Sliders en ventana "Masked Depth Map"**:
+- **Sliders en ventana "Depth Map"**:
   - `Min Z (cm)`: Profundidad mínima visible
   - `Max Z (cm)`: Profundidad máxima visible
 
 ## 🐛 Solución de Problemas
 
-### Error: "No module named 'ultralytics'"
+### Error: `_ARRAY_API not found` o incompatibilidad NumPy
 
+Este error ocurre por conflicto entre NumPy 2.x y cv_bridge de ROS2:
 ```bash
-source ~/misCosas/steering/yolo_train_env/bin/activate
+source yolo_env/bin/activate
+pip uninstall numpy
+pip install "numpy<2"
+```
+
+### Error: "No module named 'ultralytics'"
+```bash
+source yolo_env/bin/activate
 pip install ultralytics
 ```
 
 ### Error: "No module named 'cv_bridge'"
 
+El `cv_bridge` viene con ROS2 Humble, asegúrate de tenerlo instalado:
 ```bash
 sudo apt install ros-humble-cv-bridge python3-opencv
 ```
 
 ### Error: CUDA out of memory
 
-Reduce el tamaño de las imágenes o usa CPU:
-
+Reduce el tamaño de las imágenes o fuerza uso de CPU:
 ```python
 # En el script, modifica la predicción:
 results = self.model.predict(img, conf=0.5, verbose=False, device='cpu')
@@ -197,53 +146,71 @@ results = self.model.predict(img, conf=0.5, verbose=False, device='cpu')
 ### Las ventanas OpenCV no aparecen
 
 Verifica que tengas display configurado:
-
 ```bash
 echo $DISPLAY
 # Debería mostrar algo como :0 o :1
 ```
 
+## 📦 Recrear el Entorno desde Cero
+
+Si necesitas recrear el entorno limpio:
+```bash
+# Eliminar entorno anterior
+rm -rf yolo_env
+
+# Crear nuevo
+python3 -m venv yolo_env
+source yolo_env/bin/activate
+
+# Instalar en orden correcto
+pip install --upgrade pip
+pip install "numpy<2"
+pip install opencv-python
+pip install ultralytics
+pip install torch torchvision matplotlib scipy pyyaml
+```
+
 ## 📦 Dependencias Completas (requirements.txt)
 
-Para facilitar la instalación, puedes crear un `requirements.txt`:
-
+Puedes crear un `requirements.txt`:
 ```txt
-torch==2.9.1
-torchvision==0.24.1
-ultralytics==8.4.7
-opencv-contrib-python==4.10.0.84
-numpy==1.26.4
-scipy==1.15.3
-matplotlib==3.10.8
-polars==1.37.1
-psutil==7.2.1
-pyyaml==6.0.3
-requests==2.32.5
-pillow==12.1.0
+numpy<2
+opencv-python
+ultralytics
+torch
+torchvision
+matplotlib
+scipy
+pyyaml
 ```
 
 Instalar todo de golpe:
-
 ```bash
+source yolo_env/bin/activate
 pip install -r requirements.txt
 ```
 
-## 📝 Notas
+## 📝 Notas Importantes
 
-- El modelo espera imágenes RGB de 1280x720
-- La sincronización RGB-Depth usa `ApproximateTimeSynchronizer` con slop=0.1s
-- Los parámetros intrínsecos de la cámara están hardcodeados (fx=fy=634.08)
-- La orientación se calcula usando PCA sobre los puntos de la máscara
+- **NumPy 1.x es obligatorio** para compatibilidad con cv_bridge de ROS2 Humble
+- El entorno virtual `yolo_env/` está ignorado por git
+- El modelo espera imágenes RGB de entrada
+- La sincronización RGB-Depth usa `ApproximateTimeSynchronizer`
+- Los parámetros intrínsecos de la cámara pueden necesitar ajuste según tu hardware
 
-## 📧 Contacto
+## 📧 Troubleshooting Logs
 
-Para dudas o problemas, revisa los logs de ROS2:
-
+Para ver mensajes del nodo:
 ```bash
-ros2 topic echo /rosout
+# Ver versiones instaladas
+pip list | grep -E "numpy|opencv|ultralytics|torch"
+
+# Verificar que NumPy sea 1.x
+python3 -c "import numpy; print(numpy.__version__)"
 ```
 
 ---
 
-**Versión:** 1.0  
-**Última actualización:** Enero 2026
+**Versión:** 2.0  
+**Última actualización:** Enero 2025  
+**Compatibilidad:** ROS2 Humble + NumPy 1.x
