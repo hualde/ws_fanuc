@@ -306,8 +306,6 @@ class RealTimeSegDetector(Node):
                 
                 # Info text (Moved to top-left)
                 deg = math.degrees(angle)
-                # Info text (Moved to top-left)
-                deg = math.degrees(angle)
                 info = f"Z:{z_dist:.2f}m | 2D:{deg:.0f} | Tilt:{tilt_angle_deg:.1f}"
                 cv2.putText(annotated, info, (10, 90 + i * 30), 
                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
