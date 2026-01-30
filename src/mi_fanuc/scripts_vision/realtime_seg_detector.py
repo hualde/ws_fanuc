@@ -2,7 +2,8 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point, PoseStamped
+from geometry_msgs.msg import Point, PoseStamped, PointStamped, Vector3Stamped
+from visualization_msgs.msg import Marker
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
@@ -33,6 +34,9 @@ class RealTimeSegDetector(Node):
         # Publicadores
         self.centroid_pub = self.create_publisher(Point, '/steering_rack_centroid', 10)
         self.pose_pub = self.create_publisher(PoseStamped, '/steering_rack_pose', 10)
+        self.grasp_point_pub = self.create_publisher(PointStamped, '/steering_rack_grasp_point', 10)
+        self.grasp_axis_pub = self.create_publisher(Vector3Stamped, '/steering_rack_grasp_axis', 10)
+        self.marker_pub = self.create_publisher(Marker, '/steering_rack_markers', 10)
         
         # Suscriptores Sincronizados (RGB + Depth)
         self.rgb_sub = message_filters.Subscriber(self, Image, '/rgb')
@@ -277,6 +281,61 @@ class RealTimeSegDetector(Node):
                 pose_msg.pose.orientation.w = math.cos(angle / 2.0)
                 
                 self.pose_pub.publish(pose_msg)
+                
+                # --- NUEVOS PUBLICADORES (Point + Vector) ---
+                if len(z_valid) > 10:
+                    # 1. Punto de Agarre (Centroid 3D Snapped)
+                    p_msg = PointStamped()
+                    p_msg.header.stamp = rgb_msg.header.stamp
+                    p_msg.header.frame_id = 'world'
+                    p_msg.point.x = real_x
+                    p_msg.point.y = real_y
+                    p_msg.point.z = real_z
+                    self.grasp_point_pub.publish(p_msg)
+                    
+                    # 2. Vector de Dirección de Agarre (Rosa)
+                    v_msg = Vector3Stamped()
+                    v_msg.header.stamp = rgb_msg.header.stamp
+                    v_msg.header.frame_id = 'world'
+                    v_msg.vector.x = float(grasp_axis_3d[0])
+                    v_msg.vector.y = float(grasp_axis_3d[1])
+                    v_msg.vector.z = float(grasp_axis_3d[2])
+                    self.grasp_axis_pub.publish(v_msg)
+                    
+                    # 3. Marcas para RViz (Marker)
+                    marker = Marker()
+                    marker.header.frame_id = "world"
+                    marker.header.stamp = rgb_msg.header.stamp
+                    marker.ns = "grasp"
+                    marker.id = i
+                    marker.type = Marker.ARROW
+                    marker.action = Marker.ADD
+                    
+                    # Definir inicio (centroide) y fin (centroide + vector)
+                    p_start = Point(x=real_x, y=real_y, z=real_z)
+                    p_end = Point(
+                        x=real_x + float(grasp_axis_3d[0]) * 0.2,
+                        y=real_y + float(grasp_axis_3d[1]) * 0.2,
+                        z=real_z + float(grasp_axis_3d[2]) * 0.2
+                    )
+                    marker.points = [p_start, p_end]
+                    
+                    # Estética del Marker (Rosa brillante) - Aumentado
+                    marker.scale.x = 0.05 # Diámetro del eje
+                    marker.scale.y = 0.10 # Diámetro de la cabeza
+                    marker.scale.z = 0.08 # Longitud de la cabeza
+                    marker.color.r = 1.0
+                    marker.color.g = 0.0
+                    marker.color.b = 1.0
+                    marker.color.a = 1.0
+                    
+                    # Duración del Marker (para evitar parpadeo o que se acumulen infinitos)
+                    marker.lifetime = rclpy.duration.Duration(seconds=0.5).to_msg()
+                    
+                    self.marker_pub.publish(marker)
+                    
+                    if self.frame_count % 30 == 0:
+                        self.get_logger().info(f'Published 3D Marker to RViz at: ({real_x:.2f}, {real_y:.2f}, {real_z:.2f})')
                 
                 # 5. Visualización
                 # Dibujar eje principal (línea de dirección) - VERDE (2D PCA - Imagen)

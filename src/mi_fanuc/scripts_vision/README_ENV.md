@@ -67,6 +67,23 @@ mi_fanuc/
 └── .gitignore
 ```
 
+## 🛠️ Funcionalidades del Detector (`realtime_seg_detector.py`)
+
+Este script realiza un análisis avanzado de la pieza detectada integrando visión artificial y geometría 3D:
+
+1.  **Detección y Segmentación**: Utiliza YOLOv8 para identificar y extraer la máscara exacta de la pieza (`steering-rack`).
+2.  **Análisis de Pose 3D**:
+    *   **Coordenadas Reales**: Calcula la posición `(X, Y, Z)` en metros usando el mapa de profundidad.
+    *   **Ángulo Tilt (Inclinación)**: Mediante PCA 3D, determina la inclinación de la pieza respecto al plano de la cámara.
+3.  **Centroide Robusto**:
+    *   Implementa una lógica de **proyección vertical** para asegurar que el punto de agarre (punto rojo) caiga siempre dentro de la superficie azul, incluso en piezas con formas irregulares o huecos.
+4.  **Visualización Avanzada**:
+    *   **Flecha Verde**: Eje longitudinal principal (dirección de la pieza).
+    *   **Flecha Rosa (Grasp Dir)**: Eje secundario o de agarre. Indica la dirección perpendicular ideal para el ataque de una pinza robótica.
+    *   **Panel de Info**: Resumen en tiempo real (Z, Ángulo 2D, Tilt) en la esquina superior izquierda.
+
+---
+
 ## 🚀 Ejecución
 
 ### Opción 1: Activar entorno y ejecutar
