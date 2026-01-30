@@ -53,15 +53,16 @@ def main():
     try:
         # Secuencia de prueba básica
         node.go_home()
-        time.sleep(1.0)
+        time.sleep(3.0)
         
         node.open_gripper()
-        time.sleep(1.0)
+        time.sleep(3.0)
         
         node.close_gripper()
-        time.sleep(1.0)
+        time.sleep(3.0)
         
         node.open_gripper()
+        time.sleep(3.0)
         
         node.get_logger().info("✨ Secuencia básica completada con éxito")
     
