@@ -96,7 +96,7 @@ class RealTimeSegDetector(Node):
     def get_orientation_pca_3d(self, pts_3d):
         """Calcula el eje principal y el ángulo de inclinación 3D respecto al plano de la cámara."""
         if len(pts_3d) < 3:
-            return 0.0, np.array([0, 0, 1]), np.mean(pts_3d, axis=0)
+            return 0.0, np.array([0, 0, 1]), np.array([0, 1, 0]), np.mean(pts_3d, axis=0)
 
         # Normalizar puntos
         mean = np.mean(pts_3d, axis=0)
@@ -106,9 +106,10 @@ class RealTimeSegDetector(Node):
         cov = np.cov(p_centered.T)
         evals, evecs = np.linalg.eig(cov)
 
-        # Autovector principal
+        # Autovector principal y secundario
         sort_indices = np.argsort(evals)[::-1]
         principal_axis = evecs[:, sort_indices[0]]
+        secondary_axis = evecs[:, sort_indices[1]]
 
         # Asegurar que el vector apunte "hacia arriba" o estandarizar si es necesario
         # (Opcional, pero para ángulos 0-90 suele bastar tomar valor absoluto de Z)
@@ -119,7 +120,7 @@ class RealTimeSegDetector(Node):
         # Asumiendo vector normalizado:
         tilt_angle_rad = math.asin(abs(principal_axis[2]))
         
-        return tilt_angle_rad, principal_axis, mean
+        return tilt_angle_rad, principal_axis, secondary_axis, mean
 
     def project_3d_to_pixel(self, pt_3d):
         """Proyecta un punto 3D (x,y,z) a píxeles (u,v)."""
@@ -167,6 +168,60 @@ class RealTimeSegDetector(Node):
                 binary_mask = np.zeros(depth_img.shape, dtype=np.uint8)
                 cv2.fillPoly(binary_mask, [pts.astype(np.int32)], 1)
                 
+                # --- MEJORA CENTROIDE: Proyección Vertical al Punto Medio ---
+                # 1. Calculamos el Centroide Geométrico Original (Promedio)
+                M = cv2.moments(binary_mask)
+                if M["m00"] != 0:
+                    cx_geom = int(M["m10"] / M["m00"])
+                    cy_geom = int(M["m01"] / M["m00"])
+                else:
+                    cx_geom, cy_geom = int(centroid_2d[0]), int(centroid_2d[1])
+
+                # 2. Verificamos si cae dentro de la máscara (zona azul)
+                # binary_mask[y, x] == 1 es zona válida
+                is_inside = False
+                if 0 <= cy_geom < binary_mask.shape[0] and 0 <= cx_geom < binary_mask.shape[1]:
+                    if binary_mask[cy_geom, cx_geom] == 1:
+                        is_inside = True
+                
+                if is_inside:
+                    cx, cy = cx_geom, cy_geom
+                else:
+                    # 3. Si cae fuera (hueco), buscamos en la columna vertical X = cx_geom
+                    # Extraemos la columna
+                    if 0 <= cx_geom < binary_mask.shape[1]:
+                        col = binary_mask[:, cx_geom]
+                        # Buscamos índices donde hay píxeles de la pieza (valor 1)
+                        object_indices = np.where(col == 1)[0]
+                        
+                        if len(object_indices) > 0:
+                            # Buscamos el índice Y más cercano al cy_geom original
+                            # Pero queremos el CENTRO de esa sección.
+                            
+                            # Encontramos el índice más cercano para saber "en qué segmento estamos"
+                            closest_idx = (np.abs(object_indices - cy_geom)).argmin()
+                            y_closest = object_indices[closest_idx]
+                            
+                            # Ahora buscamos los limites de ese segmento contiguo
+                            # Hacia arriba
+                            y_start = y_closest
+                            while y_start > 0 and binary_mask[y_start-1, cx_geom] == 1:
+                                y_start -= 1
+                            
+                            # Hacia abajo
+                            y_end = y_closest
+                            while y_end < binary_mask.shape[0]-1 and binary_mask[y_end+1, cx_geom] == 1:
+                                y_end += 1
+                                
+                            # 4. Establecemos el nuevo CY en el punto medio de ese segmento
+                            cx = cx_geom
+                            cy = int((y_start + y_end) / 2)
+                        else:
+                            # Si la columna está vacía (raro), nos quedamos con el geométrico o el visual
+                            cx, cy = cx_geom, cy_geom
+                    else:
+                         cx, cy = cx_geom, cy_geom
+
                 # Aplicar máscara a la visualización de depth (RESTAURADO)
                 masked_depth_viz[binary_mask == 1] = depth_img[binary_mask == 1]
                 
@@ -196,8 +251,8 @@ class RealTimeSegDetector(Node):
                     
                     pts_3d = np.vstack((x_3d, y_3d, z_valid)).T
                     
-                    # Calcular orientación 3D
-                    tilt_angle_rad, axis_3d, mean_3d = self.get_orientation_pca_3d(pts_3d)
+                    # Calcular orientación 3D (Eje Principal y Eje de Agarre)
+                    tilt_angle_rad, axis_3d, grasp_axis_3d, mean_3d = self.get_orientation_pca_3d(pts_3d)
                     tilt_angle_deg = math.degrees(tilt_angle_rad)
                 elif len(z_valid) > 0:
                      z_dist = float(np.median(z_valid))
@@ -230,19 +285,18 @@ class RealTimeSegDetector(Node):
                 p2 = (int(cx + axis[0] * length), int(cy + axis[1] * length))
                 cv2.arrowedLine(annotated, p1, p2, (0, 255, 0), 3, tipLength=0.3)
                 
-                # Dibujar EJE 3D PROYECTADO - ROSA (Muestra la orientación real incluyendo el TILT)
-                # Si el objeto está muy inclinado, esta flecha se verá más corta (foreshortening)
+                # Dibujar EJE 3D PROYECTADO - ROSA (Ahora es el EJE DE AGARRE / TRANSVERSAL)
+                # Representa la dirección perpendicular a la pieza para el ataque de la pinza
                 if len(z_valid) > 10:
-                    axis_length_m = 0.20 # 20 cm de longitud de flecha en el mundo real
+                    axis_length_m = 0.15 # 15 cm de longitud
                     p_start_3d = mean_3d
-                    p_end_3d = mean_3d + axis_3d * axis_length_m
+                    p_end_3d = mean_3d + grasp_axis_3d * axis_length_m
                     
                     uv_start = self.project_3d_to_pixel(p_start_3d)
                     uv_end = self.project_3d_to_pixel(p_end_3d)
                     
                     if uv_start and uv_end:
                          cv2.arrowedLine(annotated, uv_start, uv_end, (255, 0, 255), 3, tipLength=0.3)
-                         cv2.putText(annotated, "3D Axis", (uv_end[0]+5, uv_end[1]), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,255), 1)
 
                 # Dibujar CENTROIDE (Punto de Grasp)
                 cv2.circle(annotated, (cx, cy), 10, (255, 255, 255), -1) 
@@ -250,11 +304,13 @@ class RealTimeSegDetector(Node):
                 cv2.line(annotated, (cx - 15, cy), (cx + 15, cy), (0, 0, 255), 2)
                 cv2.line(annotated, (cx, cy - 15), (cx, cy + 15), (0, 0, 255), 2)
                 
-                # Info text
+                # Info text (Moved to top-left)
+                deg = math.degrees(angle)
+                # Info text (Moved to top-left)
                 deg = math.degrees(angle)
                 info = f"Z:{z_dist:.2f}m | 2D:{deg:.0f} | Tilt:{tilt_angle_deg:.1f}"
-                cv2.putText(annotated, info, (cx + 15, cy - 35), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
+                cv2.putText(annotated, info, (10, 90 + i * 30), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
                 
                 if self.frame_count % 30 == 0:
                     self.get_logger().info(f'📍 Pose detected: {info}')
@@ -273,9 +329,11 @@ class RealTimeSegDetector(Node):
         background_mask = (masked_depth_viz == 0)
         depth_colored[background_mask] = 0
 
-        # Mostrar FPS/Frame
+        # Mostrar FPS/Frame y Leyenda Estática
         cv2.putText(annotated, f'Frame: {self.frame_count}', (10, 30), 
                    cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(annotated, "Pink: Grasp Dir", (10, 60), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 255), 2)
         
         cv2.imshow('Real-Time steering rack Analysis (3D)', annotated)
         cv2.imshow('Masked Depth Map', depth_colored)
