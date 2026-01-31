@@ -2,8 +2,9 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point, PoseStamped, PointStamped, Vector3Stamped
+from geometry_msgs.msg import Point, PoseStamped, PointStamped, Vector3Stamped, TransformStamped
 from visualization_msgs.msg import Marker
+from tf2_ros import TransformBroadcaster
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
@@ -12,6 +13,9 @@ import os
 import math
 from pathlib import Path
 import message_filters
+
+import math
+import numpy as np
 
 class RealTimeSegDetector(Node):
     def __init__(self):
@@ -31,12 +35,19 @@ class RealTimeSegDetector(Node):
         self.model = YOLO(model_path)
         self.bridge = CvBridge()
         
+        # Frame names
+        self.parent_frame = 'RSD455'
+        # self.optical_frame = 'RSD455_optical' # Revertido
+        
         # Publicadores
         self.centroid_pub = self.create_publisher(Point, '/steering_rack_centroid', 10)
         self.pose_pub = self.create_publisher(PoseStamped, '/steering_rack_pose', 10)
         self.grasp_point_pub = self.create_publisher(PointStamped, '/steering_rack_grasp_point', 10)
         self.grasp_axis_pub = self.create_publisher(Vector3Stamped, '/steering_rack_grasp_axis', 10)
         self.marker_pub = self.create_publisher(Marker, '/steering_rack_markers', 10)
+        
+        # TF Broadcaster
+        self.tf_broadcaster = TransformBroadcaster(self)
         
         # Suscriptores Sincronizados (RGB + Depth)
         self.rgb_sub = message_filters.Subscriber(self, Image, '/rgb')
@@ -133,6 +144,36 @@ class RealTimeSegDetector(Node):
         u = int((x * self.fx) / z + self.cx_cam)
         v = int((y * self.fy) / z + self.cy_cam)
         return (u, v)
+        
+    def get_quaternion_from_vector(self, v_target, v_source=np.array([1, 0, 0])):
+        """Genera un cuaternión que rota v_source para alinearse con v_target."""
+        v_t = v_target / np.linalg.norm(v_target)
+        v_s = v_source / np.linalg.norm(v_source)
+        
+        cross = np.cross(v_s, v_t)
+        dot = np.dot(v_s, v_t)
+        
+        if np.linalg.norm(cross) < 1e-6:
+            # Vectores paralelos
+            if dot > 0:
+                return [0.0, 0.0, 0.0, 1.0] # Identidad
+            else:
+                return [0.0, 0.0, 1.0, 0.0] # 180 grados en Z (o cualquier eje perp)
+        
+        q_xyz = cross
+        q_w = 1.0 + dot
+        
+        q = np.array([q_xyz[0], q_xyz[1], q_xyz[2], q_w])
+        q /= np.linalg.norm(q)
+        return q # [x, y, z, w]
+
+    def euler_to_quaternion(self, roll, pitch, yaw):
+        """Convierte ángulos de Euler (radianes) a cuaternión [x, y, z, w]."""
+        qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+        qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
+        qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
+        qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+        return [qx, qy, qz, qw]
 
     def callback(self, rgb_msg, depth_msg):
         self.frame_count += 1
@@ -142,6 +183,11 @@ class RealTimeSegDetector(Node):
         max_z_slider = cv2.getTrackbarPos('Max Z (cm)', 'Masked Depth Map') / 100.0
         if max_z_slider <= min_z_slider: max_z_slider = min_z_slider + 0.01
 
+        # --- PUBLICAR TF OPTICAL FRAME (REVERTIDO) ---
+        # Volvemos a no publicar nada extra aqui para asegurar visibilidad
+        
+        transforms_to_send = []
+        
         # Convertir imágenes
         img = self.bridge.imgmsg_to_cv2(rgb_msg, 'bgr8')
         try:
@@ -266,46 +312,116 @@ class RealTimeSegDetector(Node):
                 real_x = (float(cx) - self.cx_cam) * z_dist / self.fx
                 real_y = (float(cy) - self.cy_cam) * z_dist / self.fy
                 real_z = z_dist
-
-                # 4. Publicar Pose (Posición Real en Metros + Orientación)
-                pose_msg = PoseStamped()
-                pose_msg.header.stamp = rgb_msg.header.stamp
-                pose_msg.header.frame_id = 'world' # Cambiado de 'sim_camera' a 'world'
-                pose_msg.pose.position.x = real_x
-                pose_msg.pose.position.y = real_y
-                pose_msg.pose.position.z = real_z
+                # --- CORRECCION DE COORDENADAS (User Request: Rotar -90 en Y) ---
+                # Sistema Original (Optical): X=Right, Y=Down, Z=Forward
+                # Rotación -90 en Y: 
+                # x' = z
+                # y' = y  (Wait, visual y is usually -x in body? Let's stick to user request)
+                # Mathematical Rotation Ry(-90): x -> -z, z -> x
+                #
+                # Pero si el usuario dice "rotate -90 around Y":
+                # Aplicamos la rotación al punto P = [x, y, z]
                 
-                # Convertir ángulo a cuaternión (rotación sobre Z)
-                # Nota: En RViz, X es adelante, Y es izquierda, Z es arriba (en ROS optical frame es distinto)
-                pose_msg.pose.orientation.z = math.sin(angle / 2.0)
-                pose_msg.pose.orientation.w = math.cos(angle / 2.0)
+                # Vamos a usar la libreria math/numpy que ya tenemos
+                # R_y(-90):
+                # [[ 0, 0, -1],
+                #  [ 0, 1,  0],
+                #  [ 1, 0,  0]]
+                # p_new = R * p
+                
+                x_corr = -real_z
+                y_corr = real_y
+                z_corr = real_x
+                
+                # 4. Publicar Pose (Posición Real en Metros + Orientación)
+                # 4. Publicar Pose (Posición Real en Metros + Orientación)
+                # Usamos tiempo 0 para evitar problemas de sincronización en RViz (Static/Latest)
+                current_time = rclpy.time.Time().to_msg()
+                pose_msg = PoseStamped()
+                pose_msg.header.stamp = current_time
+                pose_msg.header.frame_id = 'RSD455' # Revertido a RSD455
+                pose_msg.pose.position.x = x_corr
+                pose_msg.pose.position.y = y_corr
+                pose_msg.pose.position.z = z_corr
+                
+                # Convertir ángulo a cuaternión 3D Real + Corrección -90 Y
+                # Alineamos el Eje X del TF con el Eje Principal del objeto (grasp_axis_3d)
+                # Opcional: Podríamos alinear Z con la normal, etc.
+                if len(z_valid) > 10:
+                    q_obj = self.get_quaternion_from_vector(grasp_axis_3d, np.array([1, 0, 0]))
+                else:
+                    q_obj = [0.0, 0.0, math.sin(angle / 2.0), math.cos(angle / 2.0)] # Fallback
+                
+                # Combinar rotaciones: q_final = q_correction * q_obj
+                # q_correction (Ry -90):
+                q_rot_y = self.euler_to_quaternion(0.0, -1.5708, 0.0)
+                
+                # Multiplicacion de cuaterniones (q_rot_y * q_obj)
+                # q1 * q2 
+                w1, x1, y1, z1 = q_rot_y[3], q_rot_y[0], q_rot_y[1], q_rot_y[2]
+                w2, x2, y2, z2 = q_obj[3], q_obj[0], q_obj[1], q_obj[2]
+                
+                w = w1*w2 - x1*x2 - y1*y2 - z1*z2
+                x = w1*x2 + x1*w2 + y1*z2 - z1*y2
+                y = w1*y2 - x1*z2 + y1*w2 + z1*x2
+                z = w1*z2 + x1*y2 - y1*x2 + z1*w2
+                
+                pose_msg.pose.orientation.x = float(x)
+                pose_msg.pose.orientation.y = float(y)
+                pose_msg.pose.orientation.z = float(z)
+                pose_msg.pose.orientation.w = float(w)
                 
                 self.pose_pub.publish(pose_msg)
+                
+                # Publicar TF del objeto
+                t = TransformStamped()
+                t.header.stamp = current_time
+                t.header.frame_id = 'RSD455' 
+                t.child_frame_id = f'steering_rack_centroid_{i}'
+                t.transform.translation.x = x_corr
+                t.transform.translation.y = y_corr
+                t.transform.translation.z = z_corr
+                t.transform.rotation.x = float(x)
+                t.transform.rotation.y = float(y)
+                t.transform.rotation.z = float(z)
+                t.transform.rotation.w = float(w)
+                
+                transforms_to_send.append(t)
                 
                 # --- NUEVOS PUBLICADORES (Point + Vector) ---
                 if len(z_valid) > 10:
                     # 1. Punto de Agarre (Centroid 3D Snapped)
                     p_msg = PointStamped()
-                    p_msg.header.stamp = rgb_msg.header.stamp
-                    p_msg.header.frame_id = 'world'
-                    p_msg.point.x = real_x
-                    p_msg.point.y = real_y
-                    p_msg.point.z = real_z
+                    p_msg.header.stamp = current_time
+                    p_msg.header.frame_id = 'RSD455' 
+                    p_msg.point.x = x_corr
+                    p_msg.point.y = y_corr
+                    p_msg.point.z = z_corr
                     self.grasp_point_pub.publish(p_msg)
                     
                     # 2. Vector de Dirección de Agarre (Rosa)
+                    # Rotar también el vector de direccion
+                    # v' = R * v
+                    vx = grasp_axis_3d[0]
+                    vy = grasp_axis_3d[1]
+                    vz = grasp_axis_3d[2]
+                    
+                    vx_corr = -vz
+                    vy_corr = vy
+                    vz_corr = vx
+                    
                     v_msg = Vector3Stamped()
-                    v_msg.header.stamp = rgb_msg.header.stamp
-                    v_msg.header.frame_id = 'world'
-                    v_msg.vector.x = float(grasp_axis_3d[0])
-                    v_msg.vector.y = float(grasp_axis_3d[1])
-                    v_msg.vector.z = float(grasp_axis_3d[2])
+                    v_msg.header.stamp = current_time
+                    v_msg.header.frame_id = 'RSD455' 
+                    v_msg.vector.x = float(vx_corr)
+                    v_msg.vector.y = float(vy_corr)
+                    v_msg.vector.z = float(vz_corr)
                     self.grasp_axis_pub.publish(v_msg)
                     
                     # 3. Marcas para RViz (Marker)
                     marker = Marker()
-                    marker.header.frame_id = "world"
-                    marker.header.stamp = rgb_msg.header.stamp
+                    marker.header.frame_id = 'RSD455' 
+                    marker.header.stamp = current_time
                     marker.ns = "grasp"
                     marker.id = i
                     marker.type = Marker.ARROW
@@ -371,6 +487,9 @@ class RealTimeSegDetector(Node):
                 
                 if self.frame_count % 30 == 0:
                     self.get_logger().info(f'📍 Pose detected: {info}')
+
+        # Enviar todos los TFs juntos al final del procesado de la imagen
+        self.tf_broadcaster.sendTransform(transforms_to_send)
 
         # MEJORA DE VISUALIZACIÓN DEPTH (Uso de Sliders)
         # Reemplazamos NaNs por 0
