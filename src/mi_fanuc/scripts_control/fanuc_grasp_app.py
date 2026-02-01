@@ -392,10 +392,11 @@ def main(args=None):
             # Orientación top-down (mirando hacia abajo)
             ox, oy, oz, ow = 0.0, 0.7071, 0.0, 0.7071
             
-            # Aproximación a 40cm sobre el objeto
+            # Aproximación a 40cm sobre el objeto, con offset de -3cm en Y
             approach_x = obj_transform.transform.translation.x
-            approach_y = obj_transform.transform.translation.y
+            approach_y = obj_transform.transform.translation.y - 0.06  # Offset -cm en Y
             approach_z = obj_transform.transform.translation.z + 0.40
+
             
             success = node.move_to_pose_ptp(
                 approach_x, approach_y, approach_z,
@@ -421,7 +422,8 @@ def main(args=None):
             # Usar X,Y actuales + Z objetivo + orientación top-down
             descent_x = current[0]
             descent_y = current[1]
-            descent_z = obj_transform.transform.translation.z + 0.08
+            descent_z = obj_transform.transform.translation.z + 0.13  # +13cm 
+
             
             node.get_logger().info(f"   Desde: X={current[0]:.3f}, Y={current[1]:.3f}, Z={current[2]:.3f}")
             node.get_logger().info(f"   Hacia: X={descent_x:.3f}, Y={descent_y:.3f}, Z={descent_z:.3f}")
