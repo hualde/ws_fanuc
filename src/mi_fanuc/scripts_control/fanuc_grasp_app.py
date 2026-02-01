@@ -393,8 +393,8 @@ def main(args=None):
             ox, oy, oz, ow = 0.0, 0.7071, 0.0, 0.7071
             
             # Aproximación a 40cm sobre el objeto, con offset de -3cm en Y
-            approach_x = obj_transform.transform.translation.x
-            approach_y = obj_transform.transform.translation.y - 0.06  # Offset -cm en Y
+            approach_x = obj_transform.transform.translation.x + 0.03
+            approach_y = obj_transform.transform.translation.y - 0.04  # Offset -cm en Y
             approach_z = obj_transform.transform.translation.z + 0.40
 
             
