@@ -131,15 +131,15 @@ class FanucGraspApp(Node):
         return None, None
     
     def move_to_pose_ptp(self, x, y, z, ox, oy, oz, ow, velocity_scale=0.2):
-        """Mueve el brazo a una pose usando Pilz PTP (Point-to-Point)."""
+        """Mueve el brazo a una pose usando OMPL (más robusto para evitar auto-colisiones)."""
         
         goal_msg = MoveGroup.Goal()
         goal_msg.request.group_name = "manipulator"
         goal_msg.request.start_state.is_diff = True
         
-        # Usar Pilz Industrial Motion Planner (PTP)
-        goal_msg.request.pipeline_id = "pilz_industrial_motion_planner"
-        goal_msg.request.planner_id = "PTP"
+        # Usar OMPL para aproximación (mejor para evitar auto-colisiones)
+        goal_msg.request.pipeline_id = "ompl"
+        goal_msg.request.planner_id = "RRTConnect"
         
         goal_msg.request.num_planning_attempts = 10
         goal_msg.request.allowed_planning_time = 20.0
@@ -393,7 +393,7 @@ def main(args=None):
             ox, oy, oz, ow = 0.0, 0.7071, 0.0, 0.7071
             
             # Aproximación a 40cm sobre el objeto, con offset de -3cm en Y
-            approach_x = obj_transform.transform.translation.x + 0.03
+            approach_x = obj_transform.transform.translation.x - 0.06
             approach_y = obj_transform.transform.translation.y - 0.04  # Offset -cm en Y
             approach_z = obj_transform.transform.translation.z + 0.40
 
