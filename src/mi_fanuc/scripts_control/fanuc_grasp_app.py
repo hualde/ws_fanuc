@@ -318,6 +318,15 @@ class FanucGraspApp(Node):
         
         self.get_logger().info("✅ Gripper OK")
         return True
+
+    def control_gripper_percentage(self, percentage):
+        """Cierra la pinza según un porcentaje (0 a 100)."""
+        # Clampear el porcentaje entre 0 y 100
+        p = max(0, min(100, float(percentage)))
+        # Calcular posición (0.0 = abierto, 0.8 = cerrado)
+        pos = (p / 100.0) * 0.8
+        self.get_logger().info(f"🖐 Moviendo gripper al {p}% (posición: {pos:.3f})")
+        return self.control_gripper(pos)
     
     def get_current_pose(self):
         """Retorna la pose actual de 'flange' respecto a 'base_link'."""
@@ -441,7 +450,13 @@ def main(args=None):
             time.sleep(1.0)
             
             node.get_logger().info("✅ Robot en posición de AGARRE.")
-            node.get_logger().info("💡 Siguiente paso: cerrar la pinza.")
+            node.get_logger().info("✊ Cerrando la pinza al 15%...")
+            success = node.control_gripper_percentage(15)
+            
+            if success:
+                node.get_logger().info("✅ Agarre completado correctamente.")
+            else:
+                node.get_logger().error("❌ Fallo al cerrar la pinza.")
         
         else:
             node.get_logger().warn("⚠️ No se encontró la pieza.")
